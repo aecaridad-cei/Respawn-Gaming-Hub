@@ -1,0 +1,261 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+img {
+    width: 100%;
+    border-radius: .3125rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+/* / RESET CSS */
+
+/* STYLES */
+
+:root {
+    /* COLORS */
+    
+    --color-primary: #4391f0;
+    --color-white: #fff;
+    --color-error: #e26868;
+
+    /* FONTS */
+
+    --text-xl: normal normal 400 normal clamp(3em, 5vw, 4em) normal, "Hedvig Letters Serif", serif;
+    --text-l: normal normal 400 normal clamp(1.5em, 5vw, 2em) normal, "Hedvig Letters Serif", serif;
+    --text-md: normal normal 400 normal clamp(1.1875em, 5vw, 1.5em) normal, "Hedvig Letters Serif", serif;
+    --text-s: normal normal 400 normal clamp(1.0625em, 5vw, 1.1875em) normal, "Instrument Sans", sans-serif;
+    --body: normal normal 400 normal clamp(.9375em, 5vw, .9375em) normal, "Instrument Sans", sans-serif;
+    --links: normal normal 600 normal clamp(.9375em, 5vw, .9375em) normal, "Instrument Sans", sans-serif;
+
+
+    /* SPACES */
+
+    --space-1: .25rem;
+    --space-2: .5rem;
+    --space-4:  1rem;
+    --space-6: 1.5rem;
+    --space-8: 2rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+
+
+    /* LAYOUT */
+
+    --max-width: 57.5rem;
+    --max-width-l: 80rem;
+    --max-width-xl: 88.75rem;
+    --min-width: 15rem;
+    --min-width-xs: 12.5rem;
+
+
+}
+
+/* / STYLES */
+
+/* COMPONENTES */
+
+h1,
+.h1 {
+    font: var(--text-xl);
+}
+
+h2,
+.h2 {
+    font: var(--text-l);
+}
+
+h3,
+.h3 {
+    font: var(--text-md);
+}
+
+h4,
+.h4 {
+    font: var(--text-s);
+}
+
+p,
+body,
+label,
+input,
+select,
+textarea,
+span {
+    font: var(--body);
+}
+
+label {
+    display: none;
+}
+
+a,
+.link {
+    font: var(--links);
+
+}
+
+li {
+    list-style: none;
+}
+
+.block {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.block--l {
+    max-width: var(--max-width-l);
+    margin: 0 auto;
+}
+
+.block--xl {
+    max-width: var(--max-width-xl);
+    margin: 0 auto;
+}
+
+/* / COMPONENTES */
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-4) var(--space-6);
+ }
+ 
+.header__logo {
+
+ }
+ 
+.header__nav {
+    display: flex;
+
+    & .header__nav--ul {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--space-2);
+    }
+}
+ 
+.header__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-6);
+}
+/* / Header */
+
+/* Hero section */
+
+/* / Hero section */
+/* Player info */
+
+.player__info {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-8);
+    border-radius: var(--space-8);
+    background-color: rgb(249, 255, 179);
+
+}
+
+.player__info-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+
+    & .player__info-icon {
+        font-size: x-large;
+        padding: var(--space-1);
+        border-radius: var(--space-2);
+        background-color:   lightskyblue;
+    }
+}
+/* / Player info */
+/* Reviews section */
+
+.reviews__section{
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-12) 0;
+    gap: var(--space-6);
+}
+
+.reviews__grid {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(var(--min-width), 1fr));
+
+    gap: var(--space-2);
+}
+
+.review__card {
+
+}
+
+/* / Reviews section */
+/* News section */
+
+.news__section{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.news__grid {
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(var(--min-width), 1fr));
+
+    gap: var(--space-2);
+}
+
+.news__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.news__img {
+    border-radius: var(--space-1);
+}
+
+.news__info {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-4) 0;
+    gap: var(--space-4);
+}
+
+/* / News section */
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-8) var(--space-2);
+}
+.footer__copyright {
+
+}
+.footer__links {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-8)
+}
+/* / Footer */
