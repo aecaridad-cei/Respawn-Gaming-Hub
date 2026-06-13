@@ -95,15 +95,20 @@
             <span>Reseñas recientes y favoritos del staff</span>
             <div class="reviews__grid">
                 <article class="review__card">
-                    <picture class="review__image">
+                    <picture>
                         <!-- Preguntas para Pedro: ¿Porque el height no funciona en el picture ni en el source pero si en el img? A: Agregue el height 100% al reset -->
                         <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
-                        <img src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
+                        <img class="review__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
                     </picture>
                     <div class="review__info">
-                        <h1>We`re on the road.</h1>
-                        <p class="h4">Secure and efficient digitization.</p>
-                        <a href="#" class="btn btn--light" title="Check our Services">Check our services</a>
+                        <span class="review__info--top-left">2020</span>
+                        <span class="review__info--top-right"><i class="ri-star-fill"></i>4.1</span>
+                        <div class="review__info--bottom-left">
+                            <span>RPG / ACCION</span>
+                            <h3>CIBERPUNK 2077</h3>
+                            <span>CD Projekt Red</span>
+                            <button class="review__btn"><i class="ri-play-fill"></i> Abrir reseña</button>
+                        </div>
                     </div>
                 </article>
             </div>
