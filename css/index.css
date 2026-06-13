@@ -6,13 +6,14 @@
 
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
 
 img {
     width: 100%;
+    height: 100%;
     border-radius: .3125rem;
 }
 
@@ -26,13 +27,14 @@ button {
     border: none;
     outline: none;
 }
+
 /* / RESET CSS */
 
 /* STYLES */
 
 :root {
     /* COLORS */
-    
+
     --color-primary: #4391f0;
     --color-white: #fff;
     --color-error: #e26868;
@@ -51,7 +53,7 @@ button {
 
     --space-1: .25rem;
     --space-2: .5rem;
-    --space-4:  1rem;
+    --space-4: 1rem;
     --space-6: 1.5rem;
     --space-8: 2rem;
     --space-12: 3rem;
@@ -139,12 +141,10 @@ li {
     display: flex;
     justify-content: space-between;
     padding: var(--space-4) var(--space-6);
- }
- 
-.header__logo {
+}
 
- }
- 
+.header__logo {}
+
 .header__nav {
     display: flex;
 
@@ -154,15 +154,51 @@ li {
         gap: var(--space-2);
     }
 }
- 
+
 .header__buttons {
     display: flex;
     justify-content: space-between;
     gap: var(--space-6);
 }
+
 /* / Header */
 
 /* Hero section */
+
+.hero__background {
+    min-height: 50rem;
+    max-width: var(--max-width-xl);
+    margin: 0 auto;
+    border-radius: .3125rem;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-6);
+
+    & .hero__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.hero__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    width: 100%;
+
+    padding: .625rem;
+    gap: var(--space-4);
+}
 
 /* / Hero section */
 /* Player info */
@@ -185,13 +221,14 @@ li {
         font-size: x-large;
         padding: var(--space-1);
         border-radius: var(--space-2);
-        background-color:   lightskyblue;
+        background-color: lightskyblue;
     }
 }
+
 /* / Player info */
 /* Reviews section */
 
-.reviews__section{
+.reviews__section {
     display: flex;
     flex-direction: column;
     padding: var(--space-12) 0;
@@ -207,13 +244,44 @@ li {
 }
 
 .review__card {
+    min-height: 32rem;
+    max-width: var(--max-width-xl);
+    margin: 0 auto;
+    border-radius: .3125rem;
+    position: relative;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-6);
+
+    & .review__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    & .review__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    width: 100%;
+
+    padding: .625rem;
+    gap: var(--space-4);
+    }
 }
 
 /* / Reviews section */
 /* News section */
 
-.news__section{
+.news__section {
     display: flex;
     flex-direction: column;
     gap: var(--space-4);
@@ -250,12 +318,13 @@ li {
     justify-content: space-between;
     padding: var(--space-8) var(--space-2);
 }
-.footer__copyright {
 
-}
+.footer__copyright {}
+
 .footer__links {
     display: flex;
     justify-content: space-between;
     gap: var(--space-8)
 }
+
 /* / Footer */

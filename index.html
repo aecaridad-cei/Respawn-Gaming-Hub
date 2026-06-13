@@ -13,7 +13,6 @@
 <body>
     <header class="header block--xl">
         <div class="header__logo">
-            <img src="" alt="">
             <span>RESPAWN</span>
             <span>GAMING HUB</span>
         </div>
@@ -34,14 +33,14 @@
     </header>
     <main>
         <!-- Hero section -->
-        <section class="block--xl">
+        <section class="block--xl hero">
             <div class="hero__background">
-                <picture>
+                <picture class="hero__image">
                     <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
-                    <img class="hero__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
+                    <img src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
                 </picture>
                 <span class="home__banner"></span>
-                <div class="hero__block block">
+                <div class="hero__info">
                     <h1>We`re on the road.</h1>
                     <p class="h4">Secure and efficient digitization.</p>
                     <a href="#" class="btn btn--light" title="Check our Services">Check our services</a>
@@ -96,28 +95,16 @@
             <span>Reseñas recientes y favoritos del staff</span>
             <div class="reviews__grid">
                 <article class="review__card">
-                        <picture>
-                            <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
-                            <img src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
-                        </picture>
-                </article>
-                <article class="review__card">
-                        <picture>
-                            <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
-                            <img src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
-                        </picture>
-                </article>
-                <article class="review__card">
-                        <picture>
-                            <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
-                            <img src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
-                        </picture>
-                </article>
-                <article class="review__card">
-                        <picture>
-                            <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
-                            <img src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
-                        </picture>
+                    <picture class="review__image">
+                        <!-- Preguntas para Pedro: ¿Porque el height no funciona en el picture ni en el source pero si en el img? A: Agregue el height 100% al reset -->
+                        <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
+                        <img src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
+                    </picture>
+                    <div class="review__info">
+                        <h1>We`re on the road.</h1>
+                        <p class="h4">Secure and efficient digitization.</p>
+                        <a href="#" class="btn btn--light" title="Check our Services">Check our services</a>
+                    </div>
                 </article>
             </div>
         </section>
