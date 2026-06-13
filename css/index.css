@@ -150,9 +150,11 @@ li {
 /* Header */
 .header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: var(--space-4);
+    gap: var(--space-6);
     position: fixed;
     top: 0;
     right: 0;
@@ -206,230 +208,233 @@ li {
 
         }
 
-        & .header__buttons-player {
-
-        }
+        & .header__buttons-player {}
     }
 }
+/* / Header */
+/* Hero section */
 
-    /* / Header */
-    /* Hero section */
+.hero {
 
-    .hero {
+    & .hero__background {
+        min-height: 50rem;
+        max-width: var(--max-width-xl);
+        margin: 0 auto;
+        border-radius: .3125rem;
+        position: relative;
 
-        & .hero__background {
-            min-height: 50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: var(--space-6);
+
+        & .hero__image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        & .hero__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            width: 100%;
+
+            padding: .625rem;
+            gap: var(--space-4);
+        }
+
+    }
+}
+/* / Hero section */
+/* Player info */
+.player__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    padding: var(--space-8);
+    gap: var(--space-16);
+    border-radius: var(--space-8);
+    background-color: rgb(249, 255, 179);
+
+    & .player__info-card {
+        display: flex;
+        align-items: center;
+        min-width: 150px; /*crear variable para este valor*/
+        gap: var(--space-4);
+
+        & .player__info-icon {
+            font-size: x-large;
+            padding: var(--space-1);
+            border-radius: var(--space-2);
+            background-color: lightskyblue;
+        }
+    }
+
+}
+
+/* / Player info */
+/* Reviews section */
+.reviews__section {
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-12) 0;
+    gap: var(--space-6);
+
+    & .reviews__grid {
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(auto-fit, minmax(var(--min-width), 1fr));
+
+        gap: var(--space-12); /*valor importante con el responsive*/
+
+        .review__card {
+            min-height: 32rem;
+            min-width: 20rem;
             max-width: var(--max-width-xl);
             margin: 0 auto;
-            border-radius: .3125rem;
+            border-radius: var(--space-16);
             position: relative;
 
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: var(--space-6);
+            padding: var(--space-6); /*valor importante con el responsive*/
+            gap: var(--space-6); /*valor importante con el responsive*/
 
-            & .hero__image {
+            & .review__image {
                 position: absolute;
                 top: 0;
                 left: 0;
                 z-index: -1;
                 width: 100%;
                 height: 100%;
+                border-radius: var(--space-12);
                 object-fit: cover;
             }
 
-            & .hero__info {
+            & .review__info {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: start;
+                position: relative;
 
                 width: 100%;
+                height: 100%;
 
                 padding: .625rem;
                 gap: var(--space-4);
-            }
 
-        }
-    }
-
-    /* / Hero section */
-    /* Player info */
-    .player__info {
-        display: flex;
-        justify-content: space-between;
-        padding: var(--space-8);
-        border-radius: var(--space-8);
-        background-color: rgb(249, 255, 179);
-
-        & .player__info-card {
-            display: flex;
-            align-items: center;
-            gap: var(--space-4);
-
-            & .player__info-icon {
-                font-size: x-large;
-                padding: var(--space-1);
-                border-radius: var(--space-2);
-                background-color: lightskyblue;
-            }
-        }
-
-    }
-
-    /* / Player info */
-    /* Reviews section */
-    .reviews__section {
-        display: flex;
-        flex-direction: column;
-        padding: var(--space-12) 0;
-        gap: var(--space-6);
-
-        & .reviews__grid {
-            display: grid;
-            grid-auto-flow: dense;
-            grid-template-columns: repeat(auto-fit, minmax(var(--min-width), 1fr));
-
-            gap: var(--space-2);
-
-            .review__card {
-                min-height: 32rem;
-                min-width: 20rem;
-                max-width: var(--max-width-xl);
-                margin: 0 auto;
-                border-radius: var(--space-16);
-                position: relative;
-
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: var(--space-6);
-
-                & .review__image {
+                & .review__info--top-left {
                     position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: -1;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: var(--space-12);
-                    object-fit: cover;
+                    left: var(--space-1);
+                    top: var(--space-1);
+                    color: var(--color-black);
+                    background-color: var(--color-white);
+                    padding: var(--space-2);
+                    border-radius: var(--space-4);
+
                 }
 
-                & .review__info {
+                & .review__info--top-right {
+                    position: absolute;
+                    right: var(--space-1);
+                    top: var(--space-1);
+                    color: var(--color-white);
+                    background-color: var(--color--grey);
+                    opacity: 0.9;
+                    padding: var(--space-2);
+                    border-radius: var(--space-4);
+                }
+
+                & .review__info--bottom-left {
                     display: flex;
                     flex-direction: column;
-                    justify-content: center;
                     align-items: start;
-                    position: relative;
-
-                    width: 100%;
-                    height: 100%;
-
-                    padding: .625rem;
                     gap: var(--space-4);
+                    color: #fff;
+                    position: absolute;
+                    left: var(--space-1);
+                    bottom: var(--space-1);
 
-                    & .review__info--top-left {
-                        position: absolute;
-                        left: var(--space-1);
-                        top: var(--space-1);
-                        color: var(--color-black);
-                        background-color: var(--color-white);
-                        padding: var(--space-2);
-                        border-radius: var(--space-4);
-
-                    }
-
-                    & .review__info--top-right {
-                        position: absolute;
-                        right: var(--space-1);
-                        top: var(--space-1);
-                        color: var(--color-white);
-                        background-color: var(--color--grey);
-                        opacity: 0.9;
-                        padding: var(--space-2);
-                        border-radius: var(--space-4);
-                    }
-
-                    & .review__info--bottom-left {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: start;
-                        gap: var(--space-4);
-                        color: #fff;
-                        position: absolute;
-                        left: var(--space-1);
-                        bottom: var(--space-1);
-
-
-                    }
 
                 }
+
             }
         }
     }
+}
 
-    /* / Reviews section */
-    /* News section */
-    .news__section {
-        display: flex;
-        flex-direction: column;
-        gap: var(--space-4);
+/* / Reviews section */
+/* News section */
+.news__section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
 
-        & .news__grid {
-            display: grid;
-            grid-auto-flow: dense;
-            grid-template-columns: repeat(auto-fit, minmax(var(--min-width), 1fr));
+    & .news__grid {
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: repeat(auto-fit, minmax(var(--min-width), 1fr));
 
-            gap: var(--space-2);
+        gap: var(--space-8); /*valor importante con el responsive*/
 
-            & .news__card {
+        & .news__card {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            border-radius: var(--space-12);
+            background-color: var(--color--grey);
+            color: var(--color-primary);
+
+            & .news__card-type {
+                position: absolute;
+                top: var(--space-2);
+                left: var(--space-2);
+                padding: var(--space-2);
+                background-color: var(--color-white);
+                border-radius: var(--space-12);
+            }
+
+            & .news__image {
+                display: flex;
+                flex: 1 1 var(--min-width-xs);
+            }
+
+            & .news__info {
                 display: flex;
                 flex-direction: column;
-                position: relative;
-                border-radius: var(--space-12);
-                background-color: var(--color--grey);
-                color: var(--color-primary);
-
-                & .news__card-type {
-                    position: absolute;
-                    top: var(--space-2);
-                    left: var(--space-2);
-                    padding: var(--space-2);
-                    background-color: var(--color-white);
-                    border-radius: var(--space-12);
-                }
-
-                & .news__image {
-                    display: flex;
-                    flex: 1 1 var(--min-width-xs);
-                }
-
-                & .news__info {
-                    display: flex;
-                    flex-direction: column;
-                    padding: var(--space-4);
-                    gap: var(--space-4);
-                }
+                padding: var(--space-4);
+                gap: var(--space-4);
             }
         }
     }
+}
 
-    /* / News section */
-    /* Footer */
-    .footer {
+/* / News section */
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-8) var(--space-2);
+    gap: var(--space-12);
+
+    & .footer__copyright {}
+
+    & .footer__links {
         display: flex;
         justify-content: space-between;
-        padding: var(--space-8) var(--space-2);
-
-        & .footer__copyright {}
-
-        & .footer__links {
-            display: flex;
-            justify-content: space-between;
-            gap: var(--space-8)
-        }
+        gap: var(--space-8)
     }
+}
 
-    /* / Footer */
+/* / Footer */
