@@ -13,8 +13,14 @@
 <body>
     <header class="header block--xl">
         <div class="header__logo">
-            <span>RESPAWN</span>
-            <span>GAMING HUB</span>
+            <picture>
+                <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
+                <img class="logo__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
+            </picture>
+            <div class="header__logo-info">
+                <span>RESPAWN</span>
+                <span>GAMING HUB</span>
+            </div>
         </div>
         <nav class="header__nav">
             <ul class="header__nav--ul">
@@ -28,7 +34,9 @@
         <div class="header__buttons">
             <button><i class="ri-search-2-line"></i></button>
             <button><i class="ri-notification-2-line"></i></button>
-            <!-- Aqui va el boton de iniciar sesion/registrarse -->
+            <div>
+                <button><i class="ri-user-line"></i> <span>Player 1</span></button>
+            </div>
         </div>
     </header>
     <main>
