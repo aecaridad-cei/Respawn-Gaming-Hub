@@ -26,7 +26,7 @@ button {
     border: none;
     outline: none;
 
-    color: #fff;
+    color: var(--color-primary);
 }
 
 /* / RESET CSS */
@@ -150,25 +150,42 @@ li {
 .header {
     display: flex;
     justify-content: space-between;
-    padding: var(--space-4) var(--space-6);
-}
+    padding: var(--space-4);
 
-.header__logo {}
+    & .header__logo {
+        display: flex;
+        align-items: center;
+        gap: 2px;
 
-.header__nav {
-    display: flex;
+        & .logo__image {
+            max-width: 70px;
+            max-height: 70px;
+        }
 
-    & .header__nav--ul {
+        & .header__logo-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: var(--space-1);
+            gap: var(--space-1)
+        }
+    }
+
+    & .header__nav {
+        display: flex;
+
+        & .header__nav--ul {
+            display: flex;
+            justify-content: space-between;
+            gap: var(--space-2);
+        }
+    }
+
+    & .header__buttons {
         display: flex;
         justify-content: space-between;
-        gap: var(--space-2);
+        gap: var(--space-6);
     }
-}
-
-.header__buttons {
-    display: flex;
-    justify-content: space-between;
-    gap: var(--space-6);
 }
 
 /* / Header */
@@ -176,47 +193,46 @@ li {
 /* Hero section */
 
 .hero {
-    padding: var(--space-8) 0;
-}
 
-.hero__background {
-    min-height: 50rem;
-    max-width: var(--max-width-xl);
-    margin: 0 auto;
-    border-radius: .3125rem;
-    position: relative;
+    & .hero__background {
+        min-height: 50rem;
+        max-width: var(--max-width-xl);
+        margin: 0 auto;
+        border-radius: .3125rem;
+        position: relative;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: var(--space-6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: var(--space-6);
 
-    & .hero__image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        & .hero__image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        & .hero__info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            width: 100%;
+
+            padding: .625rem;
+            gap: var(--space-4);
+        }
+
     }
-}
-
-.hero__info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-
-    width: 100%;
-
-    padding: .625rem;
-    gap: var(--space-4);
 }
 
 /* / Hero section */
 /* Player info */
-
 .player__info {
     display: flex;
     justify-content: space-between;
@@ -224,19 +240,19 @@ li {
     border-radius: var(--space-8);
     background-color: rgb(249, 255, 179);
 
-}
+    & .player__info-card {
+        display: flex;
+        align-items: center;
+        gap: var(--space-4);
 
-.player__info-card {
-    display: flex;
-    align-items: center;
-    gap: var(--space-4);
-
-    & .player__info-icon {
-        font-size: x-large;
-        padding: var(--space-1);
-        border-radius: var(--space-2);
-        background-color: lightskyblue;
+        & .player__info-icon {
+            font-size: x-large;
+            padding: var(--space-1);
+            border-radius: var(--space-2);
+            background-color: lightskyblue;
+        }
     }
+
 }
 
 /* / Player info */
@@ -330,6 +346,7 @@ li {
         }
     }
 }
+
 /* / Reviews section */
 /* News section */
 .news__section {
@@ -375,20 +392,21 @@ li {
         }
     }
 }
+
 /* / News section */
 /* Footer */
 .footer {
     display: flex;
     justify-content: space-between;
     padding: var(--space-8) var(--space-2);
-}
 
-.footer__copyright {}
+    & .footer__copyright {}
 
-.footer__links {
-    display: flex;
-    justify-content: space-between;
-    gap: var(--space-8)
+    & .footer__links {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--space-8)
+    }
 }
 
 /* / Footer */
