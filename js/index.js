@@ -1,6 +1,8 @@
 
 
-// Hero Carrusel
+// Hero Section
+// Aumentar el indice del carrrusel mini
+// Realizar todo en una funcion sincronizada
 const arrayImg = ['media/img/Ciberpunk__hero.jpg', 'media/img/Rs__hero.jpg', 'media/img/Ciberpunk__hero.jpg']
 let indiceArray = 0
 let interval
