@@ -1,7 +1,7 @@
 
 
 // Hero Carrusel
-const arrayImg = ['media/img/Ciberpunk__hero.jpg', 'media/img/rs__hero.jpg', 'media/img/Ciberpunk__hero.jpg']
+const arrayImg = ['media/img/Ciberpunk__hero.jpg', 'media/img/Rs__hero.jpg', 'media/img/Ciberpunk__hero.jpg']
 let indiceArray = 0
 let interval
 const delayImg = 3000
