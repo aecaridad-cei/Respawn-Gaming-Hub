@@ -211,7 +211,6 @@ li {
         & .header__buttons-player {}
     }
 }
-
 /* / Header */
 /* Hero section */
 
@@ -225,7 +224,7 @@ li {
         position: relative;
 
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         padding: var(--space-12);
 
@@ -283,20 +282,18 @@ li {
                     opacity: 1;
                 }
             }
-        }
 
-        & #imagen-rotativa {
+            & #imagen-rotativa {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: opacity 0.3s ease;
             opacity: 1;
             cursor: pointer;
+            }
         }
-
     }
 }
-
 /* / Hero section */
 /* Player info */
 .player__info {
@@ -325,7 +322,6 @@ li {
     }
 
 }
-
 /* / Player info */
 /* Reviews section */
 .reviews__section {
@@ -421,7 +417,6 @@ li {
         }
     }
 }
-
 /* / Reviews section */
 /* News section */
 .news__section {
@@ -468,7 +463,6 @@ li {
         }
     }
 }
-
 /* / News section */
 /* Footer */
 .footer {
@@ -486,5 +480,4 @@ li {
         gap: var(--space-8)
     }
 }
-
 /* / Footer */
