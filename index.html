@@ -23,7 +23,7 @@
             </div>
         </div>
         <nav id="nav" class="header__nav">
-            <ul class="header__nav--ul">
+            <ul class="header__ul">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Reseñas</a></li>
                 <li><a href="#">Noticias</a></li>
@@ -41,38 +41,30 @@
     </header>
     <main>
         <!-- Hero section -->
-        <section class="block--xl hero">
-            <div class="hero__background">
-                <!-- Poner luego todo a webp con su  respaldo en img -->
-                <picture class="hero__image">
-                    <source id="hero-rotativo-srcset" srcset="media/img/img_1.jpg" type="image/jpg">
-                    <img id="hero-rotativo" src="media/img/img_1.jpg" alt="Imagen Rotativa">
-                </picture>
-                <div class="hero__info">
-                    <span>06 JUN 2026 · 4 min</span>
-                    <h4>Ciberpunk 2077 ha recibido su actualización definitiva</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aspernatur.</p>
+        <section id="hero" class="hero">
+        <div class="hero__block">
+            <H1>Lorem ipsum dolor sit amet</H1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam fuga dolores dignissimos, iure at quasi maxime commodi, rerum, quae optio laboriosam non exercitationem obcaecati. Earum modi nulla id quasi officia.</p>
+            <a class="btn" href="#">Know more</a>
+            <button id="back-carrousel"><i class="ri-arrow-left-wide-line"></i></button>
+            <button id="next-carrousel"><i class="ri-arrow-right-wide-fill"></i></button>
+            <div>
+                <Span id="array-index"></Span>
+                <Span>/</Span>
+                <Span>11</Span>
+            <div class="hero__rotative">
+                <div class="hero__image">
+                    <img src="" alt="">
                 </div>
-                <div class="hero__cards">
-                    <div class="hero__cards-fila">
-                        <div>
-                            <Span>1</Span>
-                            <Span>/</Span>
-                            <Span>11</Span>
-                        </div>
-                        <Span>PROXIMO</Span>
-                    </div>
-                    <div>
-                        <img id="imagen-rotativa-a" src="media/img/img_2.jpg" alt="Imagen Rotativa">
-                    </div>
-                    <div>
-                        <img id="imagen-rotativa-b" src="media/img/img_3.jpg" alt="Imagen Rotativa">
-                    </div>
-                    <div>
-                        <img id="imagen-rotativa-c" src="media/img/img_4.jpg" alt="Imagen Rotativa">
-                    </div>
+                <div class="hero__image">
+                    <img src="" alt="">
+                </div>
+                <div class="hero__image">
+                    <img src="" alt="">
                 </div>
             </div>
+        </div>
+        <img src="" alt="" class="hero__background">
         </section>
         <!-- / Hero section -->
         <!-- Player info section -->
@@ -81,7 +73,7 @@
                 <div class="player__info-card">
                     <span>P1</span>
                     <div>
-                        <h4>BIENVENIDO</h4>
+                        <h4>BIENVENIDO </h4>
                         <span>Hola, Player1</span>
                     </div>
                 </div>

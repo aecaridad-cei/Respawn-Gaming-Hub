@@ -1,38 +1,50 @@
-// Hero Section
+let index = 0
+const hero = document.getElementById('hero')
+const gallery = [
+    '/media/img/img_1.jpg',
+    '/media/img/img_2.jpg',
+    '/media/img/img_3.jpg',
+    '/media/img/img_4.jpg',
+]
 
-const heroRotativo = document.getElementById('hero-rotativo')
-let imagenRotativaA = document.getElementById('imagen-rotativa-a')
-let imagenRotativaB = document.getElementById('imagen-rotativa-b')
-let imagenRotativaC = document.getElementById('imagen-rotativa-c')
-let imageContainter = document.getElementById('image-container')
-const heroRotativoSrcset = document.getElementById('hero-rotativo-srcset')
-const arrayImg = ['media/img/img_1.jpg', 'media/img/img_2.jpg','media/img/img_3.jpg', 'media/img/img_4.jpg']
-let indiceArray = 0
-let interval
-const delayImg = 3000
+setInterval(rotateHero, 3000)
 
-function cambioImg() {
-    setTimeout( () => {
-        indiceArray++
-        indiceArray >= arrayImg.length ? indiceArray = 0 : ""
-        heroRotativo.src = arrayImg[indiceArray]
-        heroRotativoSrcset.srcset = arrayImg[indiceArray]
+function rotateHero(start) {
+    const heroBackground = hero.querySelector('.hero__background')
+    const heroCard = hero.querySelectorAll('.hero__image img')
+    const backCarrousel = document.getElementById('back-carrousel')
+    const nextCarrosuel = document.getElementById('next-carrousel')
+
+    start ? index = 0 : index++
+   
+    if (index >= gallery.length) {
+        index = index - gallery.length
+        heroBackground.src = gallery[index]
+    } else {
+        heroBackground.src = gallery[index]
+    }
+
+    heroCard.forEach((card, i) => {
+        let cardIndex = (index + i) + 1
+        let arrayIndex = document.getElementById('array-index')
+        arrayIndex.textContent = index + 1
+
+        arrayIndex >= gallery.length ? arrayIndex = arrayIndex - gallery.length : arrayIndex.textContent = index + 1
+
+        if (cardIndex >= gallery.length) {
+            cardIndex = cardIndex - gallery.length
+            card.src = gallery[cardIndex]
+        }
+        else {
+            card.src = gallery[cardIndex]
+        }
         
-    }, 300)
+    backCarrousel.addEventListener('click', () => {
+        index--
+    })
 
-}
-    
-function iniciarIntervalo() {
-    interval = setInterval(cambioImg, delayImg)
-}
-
-function detenerIntervalo() {
-    clearInterval(interval)
+        console.log('Card ' + i + ': ' + cardIndex)
+    })
 }
 
-// imagenRotativa.addEventListener('mouseenter', detenerIntervalo)
-// imagenRotativa.addEventListener('mouseleave', iniciarIntervalo)
-
-iniciarIntervalo()
-
-//  / Hero Carrusel
+rotateHero(true)
