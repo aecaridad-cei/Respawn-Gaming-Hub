@@ -1,3 +1,12 @@
+<!-- Descripción: Este archivo HTM contiene la página principal del sitio web.
+Estructura general:
+ - Encabezado
+ - Barra de navegación
+ - Hero section
+ - Player info section
+ - Reviews section
+ - News section
+ - Pie de página -->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -11,7 +20,11 @@
 </head>
 
 <body>
+    <!-- Header
+     Descrición: En el encabezado (header) de la página se encuentran los principales elementos de navegación. Entre ellos destacan los enlaces que permiten acceder a las secciones de Inicio, Reseñas, Noticias, Listas y Sobre Nosotros. Además, se muestra el logotipo de la marca junto con su nombre. Por último, incorpora una barra adicional que incluye un buscador, un icono de notificaciones para consultar las últimas novedades y una sección de inicio de sesión para los usuarios.
+ -->
     <header class="header block--xl">
+        <!-- Contenido del header -->
         <div class="header__logo">
             <picture>
                 <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
@@ -40,8 +53,10 @@
         </div>
     </header>
     <main>
-        <!-- Hero section -->
+        <!-- Hero section
+         Descripción: En esta sección encontramos un carrusel de imágenes que reúne todas las reseñas de videojuegos publicadas en la página web hasta la fecha. Cuenta con funcionalidades que permiten desplazarse hacia atrás o hacia adelante, así como seleccionar cualquiera de los videojuegos que aparecen en la cola para acceder directamente a su reseña. -->
         <section id="hero" class="hero">
+        <!-- Contenido hero section -->
         <div class="hero__block">
             <H1>Lorem ipsum dolor sit amet</H1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam fuga dolores dignissimos, iure at quasi maxime commodi, rerum, quae optio laboriosam non exercitationem obcaecati. Earum modi nulla id quasi officia.</p>
@@ -66,9 +81,10 @@
         </div>
         <img src="" alt="" class="hero__background">
         </section>
-        <!-- / Hero section -->
-        <!-- Player info section -->
+        <!-- Player info section
+         Descrición: En esta sección, el usuario encontrará información de interés relacionada con su perfil dentro de la página web. Entre los datos mostrados se incluyen el videojuego en tendencia, el videojuego mejor valorado de la plataforma, el número total de reseñas publicadas hasta el momento y las últimas novedades. Además, se muestra un mensaje de bienvenida personalizado con el nombre del usuario y la hora actual correspondiente a su zona horaria. -->
         <section class="block--l">
+            <!-- Contenido player info section -->
             <div class="player__info">
                 <div class="player__info-card">
                     <span>P1</span>
@@ -107,15 +123,15 @@
                 </div>
             </div>
         </section>
-        <!-- / Player info section -->
-        <!-- Reviews section -->
+        <!-- Reviews section
+         Descrición: En esta sección se muestran una serie de imágenes que permiten acceder directamente, mediante enlaces, a las reseñas más recientes y a las favoritas del staff. -->
         <section class="block--l reviews__section">
+        <!-- Contenido reviews section -->
             <h3>Tu biblioteca de reseñas</h3>
             <span>Reseñas recientes y favoritos del staff</span>
             <div class="reviews__grid">
                 <article class="review__card">
                     <picture>
-                        <!-- Preguntas para Pedro: ¿Porque el height no funciona en el picture ni en el source pero si en el img? A: Agregue el height 100% al reset -->
                         <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
                         <img class="review__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
                     </picture>
@@ -183,8 +199,8 @@
                 </article>
             </div>
         </section>
-        <!-- / Reviews section -->
-        <!-- News section -->
+        <!-- News section
+         Descrición: Esta sección reúne las últimas noticias del mundo de los videojuegos. Aquí los usuarios pueden mantenerse informados sobre lanzamientos de nuevos títulos, adquisiciones o ventas de estudios, novedades relacionadas con consolas, actualizaciones importantes, alianzas entre marcas, avances en funcionalidades como el crossplay y otras noticias relevantes del sector.  -->
         <section class="block--l news__section">
             <h3 class="h3">Lo más nuevo</h3>
             <span>Noticias frescas del mundo gaming</span>
@@ -239,9 +255,11 @@
                 </article>
             </div>
         </section>
-        <!-- / News section -->
     </main>
+    <!-- Footer
+     Descrición: En el pie de página (footer) se muestran los derechos de autor (copyright) de Respawn - Gaming Hub. Además, incluye una serie de enlaces de interés para los usuarios, como la política de privacidad, los términos y condiciones de uso y la política de cookies. -->
     <footer class="footer block--l">
+    <!-- Contenido del footer -->
         <div class="footer__copyright">
             <span><i class="ri-copyright-line"></i> 2026 RESPAWN BLOG · GAMING HUB</span>
         </div>
