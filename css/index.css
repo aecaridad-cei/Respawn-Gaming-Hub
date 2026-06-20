@@ -1,3 +1,15 @@
+/* index.css
+- Reset
+- Root
+- Global
+- Header
+- Hero section
+- Player info section
+- Reviews section
+- News section
+- Footer
+ */
+
 /* RESET CSS */
 * {
     margin: 0;
@@ -28,8 +40,6 @@ button {
 
     color: var(--color-primary);
 }
-
-/* / RESET CSS */
 
 /* STYLES */
 
@@ -74,8 +84,6 @@ button {
 
 
 }
-
-/* / STYLES */
 
 /* COMPONENTES */
 
@@ -145,9 +153,9 @@ li {
     border-radius: var(--space-4);
 }
 
-/* / COMPONENTES */
-
 /* Header */
+/* Descrición: /* Estilos para el encabezado (header) y todos sus elementos hijos. Incluye el logotipo, menú de navegación, barra de búsqueda, notificaciones e inicio de sesión.
+    Estructura: */
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -213,6 +221,14 @@ li {
 }
 /* / Header */
 /* Hero section */
+/* Descrición: /* Estilos para la sección principal destacada (Hero Section) y todos sus elementos hijos. Incluye las imágenes promocionales, accesos directos a las reseñas más recientes y favoritas del equipo, títulos, textos descriptivos, enlaces y demás elementos visuales que captan la atención del usuario al acceder a la página.
+    Estructura: 
+    - hero
+    - hero-block
+    - hero-rotative
+    - hero-image
+    - img
+    - hero-background*/
 .hero {
     position: relative;
 
@@ -247,6 +263,11 @@ li {
 }
 /* / Hero section */
 /* Player info */
+/* Descrición: /* Estilos para la sección de información del usuario (Player Info Section) y todos sus elementos hijos. Incluye el mensaje de bienvenida personalizado, estadísticas destacadas, videojuegos en tendencia, videojuegos mejor valorados, novedades y demás elementos relacionados con la experiencia del usuario dentro de la plataforma.
+    Estructura:
+    - player-info
+    - player-info-card
+    - player-info.icon */
 .player__info {
     display: flex;
     flex-wrap: wrap;
@@ -275,6 +296,13 @@ li {
 }
 /* / Player info */
 /* Reviews section */
+/* Descrición: Estilos para la sección de reseñas (Reviews Section) y todos sus elementos hijos. Incluye el carrusel de reseñas, imágenes de los videojuegos, controles de navegación, indicadores, títulos, descripciones, enlaces y demás elementos relacionados con las reseñas.
+    Estructura: 
+        - reviews.section
+        - reviews-grid
+        - reviews-card
+        - reviews-image
+        - reviews-info */
 .reviews__section {
     display: flex;
     flex-direction: column;
@@ -370,6 +398,14 @@ li {
 }
 /* / Reviews section */
 /* News section */
+/* Descrición: Estilos para la sección de noticias (News Section) y todos sus elementos hijos. Incluye los contenedores de noticias, imágenes, títulos, descripciones, enlaces y demás componentes relacionados con las novedades del mundo gaming.
+    Estructura: 
+        - news.section
+        - news-grid
+        - news-card
+        - news-card-type
+        - news-image
+        - news-info */
 .news__section {
     display: flex;
     flex-direction: column;
@@ -416,6 +452,11 @@ li {
 }
 /* / News section */
 /* Footer */
+/* Descrición: Estilos para el pie de página (footer) y todos sus elementos hijos. Incluye la información de derechos de autor, enlaces legales, política de privacidad, términos y condiciones y política de cookies.
+    Estructura: 
+        - footer
+        - footer-copyright
+        - footer-links */
 .footer {
     display: flex;
     justify-content: space-between;
