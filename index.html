@@ -34,7 +34,8 @@ Estructura general:
                 <span>GAMING HUB</span>
             </div>
         </div>
-        <nav id="nav" class="header__nav">
+        <nav id="nav" class="header__nav no-mobile">
+            <button id="menu-close"><i class="ri-close-circle-line no-desktop"></i></button>
             <ul class="header__ul">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Reseñas</a></li>
@@ -43,13 +44,14 @@ Estructura general:
                 <li><a href="#">Sobre</a></li>
             </ul>
         </nav>
-        <div id="header__buttons" class="header__buttons">
+        <button id="menu-toggle"><i class="ri-gamepad-line no-desktop"></i></button>
+        <div id="header__buttons" class="header__buttons no-mobile">
             <button><i class="ri-search-2-line"></i></button>
             <button><i class="ri-notification-2-line"></i></button>
-            <div class="header__buttons-player">
-                <button><i class="ri-user-line"></i> <span>Player 1</span></button>
+                <div class="header__buttons-player">
+                    <button><i class="ri-user-line"></i> <span>Player 1</span></button>
+                </div>
             </div>
-        </div>
     </header>
     <main>
         <!-- Hero section

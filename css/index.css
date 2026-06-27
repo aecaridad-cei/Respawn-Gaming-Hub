@@ -153,6 +153,19 @@ li {
     border-radius: var(--space-4);
 }
 
+.no-mobile {
+    @media (width <= 48rem) {
+        display: none;
+    }
+}
+
+.no-desktop {
+    @media (width > 48rem) {
+        display: none;
+    }
+}
+
+
 /* Header */
 /* Descripción: /* Estilos para el encabezado (header) y todos sus elementos hijos. Incluye el logotipo, menú de navegación, barra de búsqueda, notificaciones e inicio de sesión.
     Estructura: */
@@ -162,7 +175,6 @@ li {
     justify-content: space-between;
     align-items: center;
     padding: var(--space-4);
-    gap: var(--space-6);
     position: fixed;
     top: 0;
     right: 0;
@@ -198,6 +210,7 @@ li {
 
     & .header__nav {
         display: flex;
+        justify-content: space-between;
 
         & .header__ul {
             display: flex;
@@ -212,7 +225,7 @@ li {
     & .header__buttons {
         display: flex;
         justify-content: space-between;
-        gap: var(--space-6);
+        gap: var(--space-4);
 
         & button {
             font-size: var(--space-4);
@@ -225,6 +238,38 @@ li {
         & .header__buttons-player {}
     }
 }
+
+.header__nav-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-white);
+    z-index: 1;
+
+    & ul {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        height: 100%;
+        padding-inline: 4rem;
+
+        & a {
+            font: var(--text-l);
+        }
+    }
+
+    & #menu-close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 3rem;
+    }
+    
+
+}
+
 /* / Header */
 /* Hero section */
 /* Descripción: /* Estilos para la sección principal destacada (Hero Section) y todos sus elementos hijos. Incluye las imágenes promocionales, accesos directos a las reseñas más recientes y favoritas del equipo, títulos, textos descriptivos, enlaces y demás elementos visuales que captan la atención del usuario al acceder a la página.
