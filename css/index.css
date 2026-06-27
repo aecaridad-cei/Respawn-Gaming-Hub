@@ -193,7 +193,7 @@ li {
     & .header__nav {
         display: flex;
 
-        & .header__nav--ul {
+        & .header__ul {
             display: flex;
             justify-content: space-between;
             gap: var(--space-12);
@@ -273,9 +273,10 @@ li {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: start;
-    padding: var(--space-8);
+    margin: var(--space-6);
+    padding: var(--space-6);
     gap: var(--space-16);
-    border-radius: var(--space-8);
+    border-radius: var(--space-6);
     background-color: rgb(249, 255, 179);
 
     & .player__info-card {
