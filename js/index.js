@@ -27,7 +27,9 @@ function rotateHero(start) {
     heroCard.forEach((card, i) => {
         let cardIndex = (index + i) + 1
         let arrayIndex = document.getElementById('array-index')
+        let arrayLength = document.getElementById('array-length')
         arrayIndex.textContent = index + 1
+        arrayLength.textContent = gallery.length
 
         arrayIndex >= gallery.length ? arrayIndex = arrayIndex - gallery.length : arrayIndex.textContent = index + 1
 
