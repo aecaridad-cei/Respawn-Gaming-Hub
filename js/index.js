@@ -1,17 +1,3 @@
-const handlerMenu = document.getElementById('menu-toggle')
-const handlerCloseMenu = document.getElementById('menu-close')
-const nav = document.getElementById('nav')
-
-function toggleMenu() {
-    nav.classList.toggle('no-mobile')
-    nav.classList.toggle('header__nav-mobile')
-}
-
-handlerMenu.addEventListener('click', toggleMenu)
-handlerCloseMenu.addEventListener('click', toggleMenu)
-
-
-
 let index = 0
 const hero = document.getElementById('hero')
 const gallery = [
