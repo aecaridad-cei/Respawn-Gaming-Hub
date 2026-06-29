@@ -49,8 +49,16 @@ button {
     --color-primary: #4391f0;
     --color-white: #ffffff;
     --color-black: #212121;
-    --color--grey: #313131;
-    --color--lightgrey: #68686848;
+    --color-grey: #313131;
+    --color-lightgrey: #edededbc;
+    --color-flame: #de6133;
+    --color-lightflame: #f1c9bb;
+    --color-champion: #7d7020;
+    --color-lightchampion: #7d702054;
+    --color-reseña: #2b2db5;
+    --color-lightreseña: #2b2db54c;
+    --color-novedad: #b52b80;
+    --color-lightnovedad: #b52b854c;
     --color-error: #e26868;
 
     /* FONTS */
@@ -67,6 +75,7 @@ button {
 
     --space-1: .25rem;
     --space-2: .5rem;
+    --space-3: .75rem;
     --space-4: 1rem;
     --space-6: 1.5rem;
     --space-8: 2rem;
@@ -81,6 +90,7 @@ button {
     --max-width-xl: 88.75rem;
     --min-width: 15rem;
     --min-width-xs: 12.5rem;
+    --min-widht-xxs: 9.375rem;
 
 
 }
@@ -328,20 +338,59 @@ li {
     padding: var(--space-6);
     gap: var(--space-16);
     border-radius: var(--space-6);
-    background-color: rgb(249, 255, 179);
+    background-color: var(--color-lightgrey);
 
-    & .player__info-card {
+    & .player__card {
         display: flex;
         align-items: center;
-        min-width: 150px;
-        /*crear variable para este valor*/
+        min-width: var(--min-widht-xxs);
         gap: var(--space-4);
 
-        & .player__info-icon {
+        & :is(h2, h3) {
+            font-size: small;
+            font-weight: 100;
+        }
+
+        & span {
+            font-size: medium;
+            font-weight: 700;
+        }
+
+        & .player__icon {
             font-size: x-large;
-            padding: var(--space-1);
+            padding: var(--space-3);
             border-radius: var(--space-2);
-            background-color: lightskyblue;
+
+            &.player__icon--welcome {
+                display: flex;
+                padding: var(--space-4);
+                font-size: var(--space-6);
+                font-weight: 600;
+                border-radius: var(--space-4);
+                color: var(--color-white);
+                background-color: var(--color-primary);
+
+            }
+
+            &.player__icon--trend {
+                color: var(--color-flame);
+                background-color: var(--color-lightflame)
+            }
+
+            &.player__icon--champion {
+                color: var(--color-champion);
+                background-color: var(--color-lightchampion);
+            }
+
+            &.player__icon--resena {
+                color: var(--color-reseña);
+                background-color: var(--color-lightreseña);
+            }
+
+            &.player__icon--novedad {
+                color: var(--color-novedad);
+                background-color: var(--color-lightnovedad);
+            }
         }
     }
 
