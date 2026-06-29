@@ -34,53 +34,55 @@ Estructura general:
                 <span>GAMING HUB</span>
             </div>
         </div>
-        <nav id="nav" class="header__nav no-mobile">
-            <button id="menu-close"><i class="ri-close-circle-line no-desktop"></i></button>
-            <ul class="header__ul">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Reseñas</a></li>
-                <li><a href="#">Noticias</a></li>
-                <li><a href="#">Listas</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
-        </nav>
-        <button id="menu-toggle"><i class="ri-gamepad-line no-desktop"></i></button>
+        <div id="nav" class="header__nav no-mobile">
+            <nav>
+                <ul class="header__ul">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Reseñas</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Listas</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
         <div id="header__buttons" class="header__buttons no-mobile">
             <button><i class="ri-search-2-line"></i></button>
             <button><i class="ri-notification-2-line"></i></button>
-                <div class="header__buttons-player">
-                    <button><i class="ri-user-line"></i> <span>Player 1</span></button>
-                </div>
+            <div class="header__buttons-player">
+                <button><i class="ri-user-line"></i> <span>Player 1</span></button>
             </div>
+        </div>
     </header>
     <main>
         <!-- Hero section
          Descripción: En esta sección encontramos un carrusel de imágenes que reúne todas las reseñas de videojuegos publicadas en la página web hasta la fecha. Cuenta con funcionalidades que permiten desplazarse hacia atrás o hacia adelante, así como seleccionar cualquiera de los videojuegos que aparecen en la cola para acceder directamente a su reseña. -->
         <section id="hero" class="hero">
-        <!-- Contenido hero section -->
-        <div class="hero__block">
-            <H1>Lorem ipsum dolor sit amet</H1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam fuga dolores dignissimos, iure at quasi maxime commodi, rerum, quae optio laboriosam non exercitationem obcaecati. Earum modi nulla id quasi officia.</p>
-            <a class="btn" href="#">Know more</a>
-            <button id="back-carrousel"><i class="ri-arrow-left-wide-line"></i></button>
-            <button id="next-carrousel"><i class="ri-arrow-right-wide-fill"></i></button>
-            <div>
-                <Span id="array-index"></Span>
-                <Span>/</Span>
-                <Span id="array-length"></Span>
-            <div class="hero__rotative">
-                <div class="hero__image">
-                    <img src="" alt="">
+            <!-- Contenido hero section -->
+            <div class="hero__block">
+                <H1>Lorem ipsum dolor sit amet</H1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam fuga dolores dignissimos, iure at
+                    quasi maxime commodi, rerum, quae optio laboriosam non exercitationem obcaecati. Earum modi nulla id
+                    quasi officia.</p>
+                <a class="btn" href="#">Know more</a>
+                <button id="back-carrousel"><i class="ri-arrow-left-wide-line"></i></button>
+                <button id="next-carrousel"><i class="ri-arrow-right-wide-fill"></i></button>
+                <div>
+                    <Span id="array-index"></Span>
+                    <Span>/</Span>
+                    <Span id="array-length"></Span>
+                    <div class="hero__rotative">
+                        <div class="hero__image">
+                            <img src="" alt="">
+                        </div>
+                        <div class="hero__image">
+                            <img src="" alt="">
+                        </div>
+                        <div class="hero__image">
+                            <img src="" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="hero__image">
-                    <img src="" alt="">
-                </div>
-                <div class="hero__image">
-                    <img src="" alt="">
-                </div>
-            </div>
-        </div>
-        <img src="" alt="" class="hero__background">
+                <img src="" alt="" class="hero__background">
         </section>
         <!-- Player info section
          Descrición: En esta sección, el usuario encontrará información de interés relacionada con su perfil dentro de la página web. Entre los datos mostrados se incluyen el videojuego en tendencia, el videojuego mejor valorado de la plataforma, el número total de reseñas publicadas hasta el momento y las últimas novedades. Además, se muestra un mensaje de bienvenida personalizado con el nombre del usuario y la hora actual correspondiente a su zona horaria. -->
@@ -127,7 +129,7 @@ Estructura general:
         <!-- Reviews section
          Descrición: En esta sección se muestran una serie de imágenes que permiten acceder directamente, mediante enlaces, a las reseñas más recientes y a las favoritas del staff. -->
         <section class="block--l reviews__section">
-        <!-- Contenido reviews section -->
+            <!-- Contenido reviews section -->
             <h3>Tu biblioteca de reseñas</h3>
             <span>Reseñas recientes y favoritos del staff</span>
             <div class="reviews__grid">
@@ -259,7 +261,7 @@ Estructura general:
     <!-- Footer
      Descrición: En el pie de página (footer) se muestran los derechos de autor (copyright) de Respawn - Gaming Hub. Además, incluye una serie de enlaces de interés para los usuarios, como la política de privacidad, los términos y condiciones de uso y la política de cookies. -->
     <footer class="footer block--l">
-    <!-- Contenido del footer -->
+        <!-- Contenido del footer -->
         <div class="footer__copyright">
             <span><i class="ri-copyright-line"></i> 2026 RESPAWN BLOG · GAMING HUB</span>
         </div>
