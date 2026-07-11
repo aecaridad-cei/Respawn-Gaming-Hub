@@ -1,4 +1,3 @@
-let index = 0
 const hero = document.getElementById('hero')
 const gallery = [
     '/media/img/img_1.jpg',
@@ -6,6 +5,7 @@ const gallery = [
     '/media/img/img_3.jpg',
     '/media/img/img_4.jpg',
 ]
+let index = 0
 
 setInterval(rotateHero, 3000)
 
@@ -40,12 +40,6 @@ function rotateHero(start) {
         else {
             card.src = gallery[cardIndex]
         }
-        
-    backCarrousel.addEventListener('click', () => {
-        index--
-    })
-
-        console.log('Card ' + i + ': ' + cardIndex)
     })
 }
 
