@@ -46,9 +46,15 @@ button {
 :root {
     /* COLORS */
 
-    --color-primary: #4391f0;
+    --color-primary: #3b82f6;
     --color-white: #ffffff;
     --color-black: #212121;
+    --color-ink: #0f172a;
+    --color-softink: #64748b;
+    --color-border: rgba(15,23,42,0.08);
+    --color-fondoapp:#f6f8fb;
+    --color-acent: #8b5cf6;
+    --color-succes: #22c55e;
     --color-grey: #313131;
     --color-lightgrey: #edededbc;
     --color-flame: #de6133;
@@ -63,12 +69,12 @@ button {
 
     /* FONTS */
 
-    --text-xl: normal normal 400 normal clamp(3em, 5vw, 4em) normal, "Hedvig Letters Serif", serif;
-    --text-l: normal normal 400 normal clamp(1.5em, 5vw, 2em) normal, "Hedvig Letters Serif", serif;
-    --text-md: normal normal 400 normal clamp(1.1875em, 5vw, 1.5em) normal, "Hedvig Letters Serif", serif;
-    --text-s: normal normal 400 normal clamp(1.0625em, 5vw, 1.1875em) normal, "Instrument Sans", sans-serif;
-    --body: normal normal 400 normal clamp(.9375em, 5vw, .9375em) normal, "Instrument Sans", sans-serif;
-    --links: normal normal 600 normal clamp(.9375em, 5vw, .9375em) normal, "Instrument Sans", sans-serif;
+    --text-xl: normal normal 800 normal clamp(3em, 5vw, 4em) normal, "inter", sans-serif;
+    --text-l: normal normal 800 normal clamp(1.5em, 5vw, 2em) normal, "inter", sans-serif;
+    --text-md: normal normal 400 normal clamp(1.1875em, 5vw, 1.5em) normal, "jetBrains Mono", sans-serif;
+    --text-s: normal normal 400 normal clamp(1.0625em, 5vw, 1.1875em) normal, "jetBrains Mono", sans-serif;
+    --body: normal normal 400 normal clamp(.9375em, 5vw, .9375em) normal, "jetBrains Mono", sans-serif;
+    --links: normal normal 600 normal clamp(.9375em, 5vw, .9375em) normal, "jetBrains Mono", sans-serif;
 
 
     /* SPACES */
@@ -178,8 +184,8 @@ li {
     right: 0;
     left: 0;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.397);
-    backdrop-filter: blur(10px);
+    background-color: transparent;
+    backdrop-filter: blur(.1875rem);
 
     & .header__logo {
         display: flex;
@@ -190,19 +196,31 @@ li {
             display: flex;
             padding: var(--space-4);
             font-size: var(--space-6);
-            font-weight: 600;
+            font-weight: 900;
             border-radius: var(--space-4);
             color: var(--color-white);
             background-color: #4391f0;
 
         }
 
-        & .header__logo-info {
+        & .header__info {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             padding: var(--space-1);
-            gap: var(--space-1)
+            gap: var(--space-1);
+
+            & .header__title {
+                font-weight: 800;
+                font-size: x-large;
+                color: var(--color-white);
+            }
+
+            & .header__subtitle {
+                font-weight: 300;
+                font-size: small;
+                color: var(--color-grey);
+            }
         }
     }
 }
@@ -211,13 +229,15 @@ li {
     display: flex;
     justify-content: space-between;
 
-        & .header__ul {
+    & .header__ul {
         display: flex;
         justify-content: space-between;
         gap: var(--space-12);
         padding: var(--space-4);
         border-radius: var(--space-12);
-        background-color: var(--color--lightgrey);
+        border: var(--color-border) .125rem solid;
+        background-color: var(--color-border);
+        color: var(--color-fondoapp)
     }
 }
 
@@ -229,8 +249,10 @@ li {
     & button {
         font-size: var(--space-4);
         padding: var(--space-2);
-        border-radius: var(--space-6);
-        background-color: var(--color--lightgrey);
+        border-radius: var(--space-16);
+        border: var(--color-border) .125rem solid;
+        background-color: var(--color-border);
+        color: var(--color-fondoapp);
 
     }
 }
