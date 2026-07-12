@@ -399,7 +399,7 @@ li {
             min-width: 20rem;
             max-width: var(--max-width-xl);
             margin: 0 auto;
-            border-radius: var(--space-16);
+            border-radius: var(--space-4);
             position: relative;
 
             display: flex;
@@ -418,9 +418,15 @@ li {
                     transform: scale(1.2);
                     transition: 700ms;
                 }
+
+                & .review__btn {
+                    display: block;
+                }
             }
 
-            /* Probar poniendo la imagen de background y aplicando el hover sobre ell */
+            & .review__btn {
+                display: none;
+            }
 
             & .review__image {
                 position: absolute;
@@ -429,7 +435,7 @@ li {
                 z-index: -1;
                 width: 100%;
                 height: 100%;
-                border-radius: var(--space-12);
+                border-radius: var(--space-4);
                 object-fit: cover;
                 transition: 700ms;
             }
@@ -479,10 +485,7 @@ li {
                     position: absolute;
                     left: var(--space-1);
                     bottom: var(--space-1);
-
-
                 }
-
             }
         }
     }
