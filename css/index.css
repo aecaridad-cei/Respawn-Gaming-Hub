@@ -73,7 +73,7 @@ button {
     --text-l: normal normal 800 normal clamp(1.5em, 5vw, 2em) normal, "inter", sans-serif;
     --text-md: normal normal 400 normal clamp(1.1875em, 5vw, 1.5em) normal, "jetBrains Mono", sans-serif;
     --text-s: normal normal 400 normal clamp(1.0625em, 5vw, 1.1875em) normal, "jetBrains Mono", sans-serif;
-    --body: normal normal 400 normal clamp(.9375em, 5vw, .9375em) normal, "jetBrains Mono", sans-serif;
+    --body: normal normal 400 normal clamp(.9375em, 5vw, .9375em) normal, "inter", sans-serif;
     --links: normal normal 600 normal clamp(.9375em, 5vw, .9375em) normal, "jetBrains Mono", sans-serif;
 
 
@@ -130,7 +130,7 @@ input,
 select,
 textarea,
 span {
-    font: var(--body);
+    font: var(--body)
 }
 
 label {
@@ -514,7 +514,6 @@ li {
             position: relative;
             border-radius: var(--space-12);
             background-color: var(--color--grey);
-            color: var(--color-primary);
             border-radius: var(--space-3);
             overflow: hidden;
             transition: 400ms;
