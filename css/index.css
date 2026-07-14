@@ -87,16 +87,17 @@ button {
     --space-8: 2rem;
     --space-12: 3rem;
     --space-16: 4rem;
+    --space-24: 6rem;
 
 
     /* LAYOUT */
 
-    --max-width: 57.5rem;
-    --max-width-l: 80rem;
-    --max-width-xl: 88.75rem;
+    --max-width: 90rem;
+    --min-width-review: 480px;
     --min-width: 15rem;
     --min-width-xs: 12.5rem;
     --min-widht-xxs: 9.375rem;
+    --margin-responsive: clamp(1rem, 5vw, 4rem)
 
 
 }
@@ -149,16 +150,6 @@ li {
 
 .block {
     max-width: var(--max-width);
-    margin: 0 auto;
-}
-
-.block--l {
-    max-width: var(--max-width-l);
-    margin: 0 auto;
-}
-
-.block--xl {
-    max-width: var(--max-width-xl);
     margin: 0 auto;
 }
 
@@ -272,12 +263,13 @@ li {
 
     & .hero__block {
 
-    padding: 5rem 2rem ;
+        padding: var(--space-24) var(--space-8);
 
         & .hero__rotative {
             display: flex;
 
            & .hero__image {
+
             flex: 1 1 0;
     
                 & img {
@@ -311,15 +303,14 @@ li {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: start;
-    margin: var(--space-6);
-    padding: var(--space-6);
-    gap: var(--space-16);
+    margin: var(--margin-responsive) var(--margin-responsive) 0 var(--margin-responsive);
+    padding: var(--space-8);
+    gap: var(--space-12);
     border-radius: var(--space-6);
     background-color: var(--color-lightgrey);
 
     & .player__card {
         display: flex;
-        align-items: center;
         min-width: var(--min-widht-xxs);
         gap: var(--space-4);
 
@@ -384,21 +375,17 @@ li {
 .reviews__section {
     display: flex;
     flex-direction: column;
-    padding: var(--space-12) 0;
+    margin: var(--margin-responsive);
     gap: var(--space-6);
 
     & .reviews__grid {
         display: grid;
         grid-auto-flow: dense;
         grid-template-columns: repeat(auto-fit, minmax(var(--min-width), 1fr));
-
-        gap: var(--space-12);
+        gap: var(--space-4);
 
         & .review__card {
-            min-height: 32rem;
-            min-width: 20rem;
-            max-width: var(--max-width-xl);
-            margin: 0 auto;
+            min-height: var(--min-width-review);
             border-radius: var(--space-4);
             position: relative;
 
@@ -503,6 +490,7 @@ li {
 .news__section {
     display: flex;
     flex-direction: column;
+    margin: var(--margin-responsive);
     gap: var(--space-4);
 
     & .news__grid {
@@ -562,7 +550,7 @@ li {
         - footer
         - footer-copyright
         - footer-links */
-.footer {
+.footer__block {
     display: flex;
     justify-content: space-between;
     align-items: center;
