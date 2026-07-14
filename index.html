@@ -26,7 +26,7 @@ Estructura general:
     <!-- Header
      Descrición: En el encabezado (header) de la página se encuentran los principales elementos de navegación. Entre ellos destacan los enlaces que permiten acceder a las secciones de Inicio, Reseñas, Noticias, Listas y Sobre Nosotros. Además, se muestra el logotipo de la marca junto con su nombre. Por último, incorpora una barra adicional que incluye un buscador, un icono de notificaciones para consultar las últimas novedades y una sección de inicio de sesión para los usuarios.
  -->
-    <header class="header block--xl">
+    <header class="header block">
         <!-- Contenido del header -->
         <div class="header__logo">
             <div>
@@ -59,13 +59,12 @@ Estructura general:
     <main>
         <!-- Hero section
          Descripción: En esta sección encontramos un carrusel de imágenes que reúne todas las reseñas de videojuegos publicadas en la página web hasta la fecha. Cuenta con funcionalidades que permiten desplazarse hacia atrás o hacia adelante, así como seleccionar cualquiera de los videojuegos que aparecen en la cola para acceder directamente a su reseña. -->
-        <section id="hero" class="hero">
+        <section id="hero" class="hero block">
             <!-- Contenido hero section -->
             <div class="hero__block">
-                <H1>Lorem ipsum dolor sit amet</H1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam fuga dolores dignissimos, iure at
-                    quasi maxime commodi, rerum, quae optio laboriosam non exercitationem obcaecati. Earum modi nulla id
-                    quasi officia.</p>
+                <span>CD PROJEKT RED</span>
+                <H1>CIBERPUNK 2077</H1>
+                <p>Un RPG de ciencia ficción donde la identidad, el cuerpo y el alma se compran y se venden en las calles húmedas de neón.</p>
                 <a class="btn" href="#">Know more</a>
                 <button id="back-carrousel"><i class="ri-arrow-left-wide-line"></i></button>
                 <button id="next-carrousel"><i class="ri-arrow-right-wide-fill"></i></button>
@@ -86,10 +85,11 @@ Estructura general:
                     </div>
                 </div>
                 <img src="" alt="" class="hero__background">
+            </div>
         </section>
         <!-- Player info section
          Descrición: En esta sección, el usuario encontrará información de interés relacionada con su perfil dentro de la página web. Entre los datos mostrados se incluyen el videojuego en tendencia, el videojuego mejor valorado de la plataforma, el número total de reseñas publicadas hasta el momento y las últimas novedades. Además, se muestra un mensaje de bienvenida personalizado con el nombre del usuario y la hora actual correspondiente a su zona horaria. -->
-        <section class="block--l">
+        <section class="block">
             <!-- Contenido player info section -->
             <div class="player__info">
                 <div class="player__card">
@@ -131,7 +131,7 @@ Estructura general:
         </section>
         <!-- Reviews section
          Descrición: En esta sección se muestran una serie de imágenes que permiten acceder directamente, mediante enlaces, a las reseñas más recientes y a las favoritas del staff. -->
-        <section class="block--l reviews__section">
+        <section class="block reviews__section">
             <!-- Contenido reviews section -->
             <h2>Tu biblioteca de reseñas</h2>
             <span>Reseñas recientes y favoritos del staff</span>
@@ -148,7 +148,7 @@ Estructura general:
                             <span>RPG / ACCION</span>
                             <h3>CIBERPUNK 2077</h3>
                             <span>CD Projekt Red</span>
-                            <button class="review__btn"><i class="ri-play-fill"></i> Abrir reseña</button>
+                            <span class="review__btn"><i class="ri-play-fill"></i> Abrir reseña</span>
                         </div>
                     </div>
                 </article>
@@ -206,7 +206,7 @@ Estructura general:
         </section>
         <!-- News section
          Descrición: Esta sección reúne las últimas noticias del mundo de los videojuegos. Aquí los usuarios pueden mantenerse informados sobre lanzamientos de nuevos títulos, adquisiciones o ventas de estudios, novedades relacionadas con consolas, actualizaciones importantes, alianzas entre marcas, avances en funcionalidades como el crossplay y otras noticias relevantes del sector.  -->
-        <section class="block--l news__section">
+        <section class="block news__section">
             <h2>Lo más nuevo</h2>
             <span>Noticias frescas del mundo gaming</span>
             <div class="news__grid">
@@ -263,7 +263,7 @@ Estructura general:
     </main>
     <!-- Footer
      Descrición: En el pie de página (footer) se muestran los derechos de autor (copyright) de Respawn - Gaming Hub. Además, incluye una serie de enlaces de interés para los usuarios, como la política de privacidad, los términos y condiciones de uso y la política de cookies. -->
-    <footer class="footer block--l">
+    <footer class="footer__block block">
         <!-- Contenido del footer -->
         <div class="footer__copyright">
             <span><i class="ri-copyright-line"></i> 2026 RESPAWN BLOG · GAMING HUB</span>
