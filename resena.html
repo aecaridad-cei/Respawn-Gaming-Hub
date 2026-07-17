@@ -1,0 +1,80 @@
+<!-- Descripción: Este archivo HTML contiene la página principal del sitio web.
+Estructura general:
+ - Encabezado
+ - Barra de navegación
+ - Hero section
+ - Player info section
+ - Reviews section
+ - News section
+ - Pie de página -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciberpunk review</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=IM+Fell+English:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script defer src="js/index.js"></script>
+</head>
+
+<body>
+    <!-- Header
+     Descrición: En el encabezado (header) de la página se encuentran los principales elementos de navegación. Entre ellos destacan los enlaces que permiten acceder a las secciones de Inicio, Reseñas, Noticias, Listas y Sobre Nosotros. Además, se muestra el logotipo de la marca junto con su nombre. Por último, incorpora una barra adicional que incluye un buscador, un icono de notificaciones para consultar las últimas novedades y una sección de inicio de sesión para los usuarios.
+ -->
+    <header class="header block">
+        <!-- Contenido del header -->
+        <div class="header__logo">
+            <div>
+                <span class="monograma">R</span>
+            </div>
+            <div class="header__info">
+                <span class="header__title">RESPAWN</span>
+                <span class="header__subtitle">GAMING HUB</span>
+            </div>
+        </div>
+        <div id="nav" class="header__nav no-mobile">
+            <nav>
+                <ul class="header__ul">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="reviews.html">Reseñas</a></li>
+                    <li><a href="news.html">Noticias</a></li>
+                    <li><a href="list.html">Listas</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header__buttons" class="header__buttons no-mobile">
+            <button><i class="ri-search-2-line"></i></button>
+            <button><i class="ri-notification-2-line"></i></button>
+            <div class="header__buttons-player">
+                <button><i class="ri-user-line"></i> <span>Player 1</span></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+    </main>
+    <!-- Footer
+     Descrición: En el pie de página (footer) se muestran los derechos de autor (copyright) de Respawn - Gaming Hub. Además, incluye una serie de enlaces de interés para los usuarios, como la política de privacidad, los términos y condiciones de uso y la política de cookies. -->
+    <footer class="footer__block block">
+        <!-- Contenido del footer -->
+        <div class="footer__copyright">
+            <span><i class="ri-copyright-line"></i> 2026 RESPAWN BLOG · GAMING HUB</span>
+        </div>
+        <div class="footer__links">
+            <a href="#">PRIVACIDAD</a>
+            <a href="#">TÉRMINOS</a>
+            <a href="#">COOKIES</a>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
