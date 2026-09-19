@@ -9,3 +9,126 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css" rel="stylesheet">
     <script defer src="js/index.js"></script>
 </head>
+<body>
+        <header class="header block--xl">
+        <!-- Contenido del header -->
+        <div class="header__logo">
+            <div>
+                <span class="monograma">R</span>
+            </div>
+            <div class="header__info">
+                <span class="header__title">RESPAWN</span>
+                <span class="header__subtitle">GAMING HUB</span>
+            </div>
+        </div>
+        <div id="nav" class="header__nav no-mobile">
+            <nav>
+                <ul class="header__ul">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="reviews.html">Reseñas</a></li>
+                    <li><a href="news.html">Noticias</a></li>
+                    <li><a href="list.html">Listas</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header__buttons" class="header__buttons no-mobile">
+            <button><i class="ri-search-2-line"></i></button>
+            <button><i class="ri-notification-2-line"></i></button>
+            <div class="header__buttons-player">
+                <button><i class="ri-user-line"></i> <span>Player 1</span></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Reviews section
+         Descrición: En esta sección se muestran una serie de imágenes que permiten acceder directamente, mediante enlaces, a las reseñas más recientes y a las favoritas del staff. -->
+        <section class="block--l reviews__section">
+            <!-- Contenido reviews section -->
+            <h2>Tu biblioteca de reseñas</h2>
+            <span>Reseñas recientes y favoritos del staff</span>
+            <div class="reviews__grid">
+                <article class="review__card">
+                    <picture>
+                        <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
+                        <img class="review__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
+                    </picture>
+                    <div class="review__info">
+                        <span class="review__info--top-left">2020</span>
+                        <span class="review__info--top-right"><i class="ri-star-fill"></i>4.1</span>
+                        <div class="review__info--bottom-left">
+                            <span>RPG / ACCION</span>
+                            <h3>CIBERPUNK 2077</h3>
+                            <span>CD Projekt Red</span>
+                            <button class="review__btn"><i class="ri-play-fill"></i> Abrir reseña</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="review__card">
+                    <picture>
+                        <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
+                        <img class="review__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
+                    </picture>
+                    <div class="review__info">
+                        <span class="review__info--top-left">2020</span>
+                        <span class="review__info--top-right"><i class="ri-star-fill"></i>4.1</span>
+                        <div class="review__info--bottom-left">
+                            <span>RPG / ACCION</span>
+                            <h3>CIBERPUNK 2077</h3>
+                            <span>CD Projekt Red</span>
+                            <button class="review__btn"><i class="ri-play-fill"></i> Abrir reseña</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="review__card">
+                    <picture>
+                        <!-- Preguntas para Pedro: ¿Porque el height no funciona en el picture ni en el source pero si en el img? A: Agregue el height 100% al reset -->
+                        <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
+                        <img class="review__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
+                    </picture>
+                    <div class="review__info">
+                        <span class="review__info--top-left">2020</span>
+                        <span class="review__info--top-right"><i class="ri-star-fill"></i>4.1</span>
+                        <div class="review__info--bottom-left">
+                            <span>RPG / ACCION</span>
+                            <h3>CIBERPUNK 2077</h3>
+                            <span>CD Projekt Red</span>
+                            <button class="review__btn"><i class="ri-play-fill"></i> Abrir reseña</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="review__card">
+                    <picture>
+                        <!-- Preguntas para Pedro: ¿Porque el height no funciona en el picture ni en el source pero si en el img? A: Agregue el height 100% al reset -->
+                        <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
+                        <img class="review__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
+                    </picture>
+                    <div class="review__info">
+                        <span class="review__info--top-left">2020</span>
+                        <span class="review__info--top-right"><i class="ri-star-fill"></i>4.1</span>
+                        <div class="review__info--bottom-left">
+                            <span>RPG / ACCION</span>
+                            <h3>CIBERPUNK 2077</h3>
+                            <span>CD Projekt Red</span>
+                            <button class="review__btn"><i class="ri-play-fill"></i> Abrir reseña</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!-- Footer
+     Descrición: En el pie de página (footer) se muestran los derechos de autor (copyright) de Respawn - Gaming Hub. Además, incluye una serie de enlaces de interés para los usuarios, como la política de privacidad, los términos y condiciones de uso y la política de cookies. -->
+    <footer class="footer block--l">
+        <!-- Contenido del footer -->
+        <div class="footer__copyright">
+            <span><i class="ri-copyright-line"></i> 2026 RESPAWN BLOG · GAMING HUB</span>
+        </div>
+        <div class="footer__links">
+            <a href="#">PRIVACIDAD</a>
+            <a href="#">TÉRMINOS</a>
+            <a href="#">COOKIES</a>
+        </div>
+    </footer>
+</body>
+</html>
