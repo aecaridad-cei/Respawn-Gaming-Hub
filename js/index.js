@@ -4,6 +4,7 @@ const gallery = [
     '/media/img/img_2.jpg',
     '/media/img/img_3.jpg',
     '/media/img/img_4.jpg',
+    '/media/img/img_5.jpg',
 ]
 let index = 0
 
