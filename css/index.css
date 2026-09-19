@@ -171,12 +171,12 @@ li {
     justify-content: space-between;
     align-items: center;
     padding: var(--space-4);
-    position: fixed;
+    position: sticky;
     top: 0;
     right: 0;
     left: 0;
     z-index: 1;
-    background-color: transparent;
+    background-color: lightblue;
     backdrop-filter: blur(.1875rem);
     border-bottom: var(--color-ink) 0.1px solid;
 
@@ -265,30 +265,48 @@ li {
     & .hero__block {
         display: flex;
         flex-direction: column;
-        padding: 100px 50px;
+        padding: 1rem 3rem 1rem;
         gap: 1rem;
     
-        & .pepito{
+        & .pepito {
             display: flex;
             justify-content: space-between;
+            align-items: start;
+
+            & .arrows {
+                display: flex;
+                gap: 2rem;
+            }
         }
 
         & .jaime{
             display: flex;
             flex-direction: column;
+            padding-top: 10rem;
             gap: 1rem;
         }
 
         & .jose{
             display: flex;
+            align-items: end;
+
+            & .aminta{
+                display: flex;
+                flex: 1 1 310px;
+                background-color: #22c55e;
+                
+                & .index {
+                    display: flex;
+                    align-items: end;
+                }
+            }
         }
 
         & .hero__rotative {
             display: flex;
+            gap: 2rem;
 
            & .hero__image {
-
-            flex: 1 1 0;
     
                 & img {
                     width: 100%;
@@ -300,6 +318,8 @@ li {
     }
 
     & .hero__background {
+        display: flex;
+        flex: 1 1 250px;
         position: absolute;
         top: 0;
         left: 0;
@@ -319,7 +339,7 @@ li {
 .player__info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: start;
     margin: var(--margin-responsive) var(--margin-responsive) 0 var(--margin-responsive);
     padding: var(--space-8);
@@ -393,7 +413,6 @@ li {
 .reviews__section {
     display: flex;
     flex-direction: column;
-    margin: var(--margin-responsive);
     gap: var(--space-6);
 
     & .reviews__grid {
@@ -508,7 +527,6 @@ li {
 .news__section {
     display: flex;
     flex-direction: column;
-    margin: var(--margin-responsive);
     gap: var(--space-4);
 
     & .news__grid {
@@ -570,16 +588,24 @@ li {
         - footer-links */
 .footer__block {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: var(--space-8) var(--space-2);
-    gap: var(--space-12);
+    gap: var(--space-8);
 
 
     & .footer__links {
         display: flex;
         justify-content: space-between;
-        gap: var(--space-8)
+        gap: var(--space-8);
+
+        & a {
+            &:hover {
+                text-decoration: underline;
+                transform: scale(1.04);
+            }
+        }
     }
 }
 /* / Footer */
@@ -593,5 +619,96 @@ li {
 .no-desktop {
     @media (width > 48rem) {
         display: none;
+    }
+}
+
+/* Review Page CSS */
+/* Descripción: */
+
+.review__hero {
+
+    display: flex;
+    flex-direction: column;
+    margin: 7rem var(--margin-responsive) 0;
+
+    & .review__display {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 28rem;
+
+        & .review__preview{
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-8);
+            padding: var(--space-8);
+        }
+    }
+
+    & .review__background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+        border-radius: var(--space-4);
+    }
+}
+
+.review__tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: var(--margin-responsive) var(--margin-responsive) 0;
+    justify-content: space-between;
+    gap: var(--space-4);
+
+    & .review__tag {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        flex: 1 1 10rem;
+        padding: var(--space-4);
+        min-height: 4rem;
+        border-radius: 1rem;
+        background-color: var(--color-fondoapp);
+        gap: var(--space-3);
+    }
+}
+
+.review__content {
+    display: flex;
+    margin: var(--margin-responsive) var(--margin-responsive);
+
+    & .review__text {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 1;
+        gap: var(--space-2);
+        flex: 3;
+
+        & h2{
+            padding-bottom: var(--space-4);
+        }
+
+        & .review__score{
+        display: flex;
+        flex-direction: column;
+        }
+    }
+
+    & .review__aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: var(--space-8);
+        flex: 1;
+        float: right;
+
+        & .aside__card{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+        }
     }
 }
