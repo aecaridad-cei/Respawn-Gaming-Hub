@@ -416,6 +416,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: var(--space-6);
+    padding: 2rem;
 
     & .reviews__grid {
         display: grid;
@@ -530,6 +531,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: var(--space-4);
+    padding: 2rem;
 
     & .news__grid {
         display: grid;
