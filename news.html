@@ -9,160 +9,83 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css" rel="stylesheet">
     <script defer src="js/index.js"></script>
 </head>
+<body>
+    <!-- Header
+     Descrición: En el encabezado (header) de la página se encuentran los principales elementos de navegación. Entre ellos destacan los enlaces que permiten acceder a las secciones de Inicio, Reseñas, Noticias, Listas y Sobre Nosotros. Además, se muestra el logotipo de la marca junto con su nombre. Por último, incorpora una barra adicional que incluye un buscador, un icono de notificaciones para consultar las últimas novedades y una sección de inicio de sesión para los usuarios.
+ -->
+    <header class="header block">
+        <!-- Contenido del header -->
+        <div class="header__logo">
+            <div>
+                <span class="monograma">R</span>
+            </div>
+            <div class="header__info">
+                <span class="header__title">RESPAWN</span>
+                <span class="header__subtitle">GAMING HUB</span>
+            </div>
+        </div>
+        <div id="nav" class="header__nav no-mobile">
+            <nav>
+                <ul class="header__ul">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="reviews.html">Reseñas</a></li>
+                    <li><a href="news.html">Noticias</a></li>
+                    <li><a href="list.html">Listas</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header__buttons" class="header__buttons no-mobile">
+            <button><i class="ri-search-2-line"></i></button>
+            <button><i class="ri-notification-2-line"></i></button>
+            <div class="header__buttons-player">
+                <button><i class="ri-user-line"></i> <span>Player 1</span></button>
+            </div>
+        </div>
+    </header>
     <main>
-        <!-- Hero section
-         Descripción: En esta sección encontramos un carrusel de imágenes que reúne todas las reseñas de videojuegos publicadas en la página web hasta la fecha. Cuenta con funcionalidades que permiten desplazarse hacia atrás o hacia adelante, así como seleccionar cualquiera de los videojuegos que aparecen en la cola para acceder directamente a su reseña. -->
-        <section id="hero" class="hero">
-            <!-- Contenido hero section -->
-            <div class="hero__block">
-                <H1>Lorem ipsum dolor sit amet</H1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam fuga dolores dignissimos, iure at
-                    quasi maxime commodi, rerum, quae optio laboriosam non exercitationem obcaecati. Earum modi nulla id
-                    quasi officia.</p>
-                <a class="btn" href="#">Know more</a>
-                <button id="back-carrousel"><i class="ri-arrow-left-wide-line"></i></button>
-                <button id="next-carrousel"><i class="ri-arrow-right-wide-fill"></i></button>
-                <div>
-                    <Span id="array-index"></Span>
-                    <Span>/</Span>
-                    <Span id="array-length"></Span>
-                    <div class="hero__rotative">
-                        <div class="hero__image">
-                            <img src="" alt="">
-                        </div>
-                        <div class="hero__image">
-                            <img src="" alt="">
-                        </div>
-                        <div class="hero__image">
-                            <img src="" alt="">
-                        </div>
-                    </div>
-                </div>
-                <img src="" alt="" class="hero__background">
-        </section>
-        <!-- Player info section
-         Descrición: En esta sección, el usuario encontrará información de interés relacionada con su perfil dentro de la página web. Entre los datos mostrados se incluyen el videojuego en tendencia, el videojuego mejor valorado de la plataforma, el número total de reseñas publicadas hasta el momento y las últimas novedades. Además, se muestra un mensaje de bienvenida personalizado con el nombre del usuario y la hora actual correspondiente a su zona horaria. -->
-        <section class="block--l">
-            <!-- Contenido player info section -->
-            <div class="player__info">
-                <div class="player__card">
-                    <span class="player__icon player__icon--welcome">P1</span>
-                    <div>
-                        <h2 class="h4">BIENVENIDO </h2>
-                        <span>Hola, Player1</span>
-                    </div>
-                </div>
-                <div class="player__card">
-                    <span class="player__icon player__icon--trend"><i class="ri-fire-line"></i></span>
-                    <div>
-                        <h3 class="h4">TENDENCIA</h3>
-                        <span>Forza Horizon 6</span>
-                    </div>
-                </div>
-                <div class="player__card">
-                    <span class="player__icon player__icon--champion"><i class="ri-trophy-line"></i></span>
-                    <div>
-                        <h3 class="h4">TOP PUNTAJE</h3>
-                        <span>GTA VI - 4.9 <i class="ri-star-line"></i></span>
-                    </div>
-                </div>
-                <div class="player__card">
-                    <span class="player__icon player__icon--resena"><i class="ri-gamepad-line"></i></span>
-                    <div>
-                        <h3 class="h4">RESEÑAS</h3>
-                        <span>8</span>
-                    </div>
-                </div>
-                <div class="player__card">
-                    <span class="player__icon player__icon--novedad"><i class="ri-sparkling-line"></i></span>
-                    <div>
-                        <h3 class="h4">NOVEDADES</h3>
-                        <span><!-- aqui va el enlace que nos dirige a las novedades--></span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Reviews section
-         Descrición: En esta sección se muestran una serie de imágenes que permiten acceder directamente, mediante enlaces, a las reseñas más recientes y a las favoritas del staff. -->
-        <section class="block--l reviews__section">
-            <!-- Contenido reviews section -->
-            <h2>Tu biblioteca de reseñas</h2>
-            <span>Reseñas recientes y favoritos del staff</span>
-            <div class="reviews__grid">
-                <article class="review__card">
-                    <picture>
-                        <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
-                        <img class="review__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
-                    </picture>
-                    <div class="review__info">
-                        <span class="review__info--top-left">2020</span>
-                        <span class="review__info--top-right"><i class="ri-star-fill"></i>4.1</span>
-                        <div class="review__info--bottom-left">
-                            <span>RPG / ACCION</span>
-                            <h3>CIBERPUNK 2077</h3>
-                            <span>CD Projekt Red</span>
-                            <button class="review__btn"><i class="ri-play-fill"></i> Abrir reseña</button>
-                        </div>
-                    </div>
-                </article>
-                <article class="review__card">
-                    <picture>
-                        <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
-                        <img class="review__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
-                    </picture>
-                    <div class="review__info">
-                        <span class="review__info--top-left">2020</span>
-                        <span class="review__info--top-right"><i class="ri-star-fill"></i>4.1</span>
-                        <div class="review__info--bottom-left">
-                            <span>RPG / ACCION</span>
-                            <h3>CIBERPUNK 2077</h3>
-                            <span>CD Projekt Red</span>
-                            <button class="review__btn"><i class="ri-play-fill"></i> Abrir reseña</button>
-                        </div>
-                    </div>
-                </article>
-                <article class="review__card">
-                    <picture>
-                        <!-- Preguntas para Pedro: ¿Porque el height no funciona en el picture ni en el source pero si en el img? A: Agregue el height 100% al reset -->
-                        <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
-                        <img class="review__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
-                    </picture>
-                    <div class="review__info">
-                        <span class="review__info--top-left">2020</span>
-                        <span class="review__info--top-right"><i class="ri-star-fill"></i>4.1</span>
-                        <div class="review__info--bottom-left">
-                            <span>RPG / ACCION</span>
-                            <h3>CIBERPUNK 2077</h3>
-                            <span>CD Projekt Red</span>
-                            <button class="review__btn"><i class="ri-play-fill"></i> Abrir reseña</button>
-                        </div>
-                    </div>
-                </article>
-                <article class="review__card">
-                    <picture>
-                        <!-- Preguntas para Pedro: ¿Porque el height no funciona en el picture ni en el source pero si en el img? A: Agregue el height 100% al reset -->
-                        <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
-                        <img class="review__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
-                    </picture>
-                    <div class="review__info">
-                        <span class="review__info--top-left">2020</span>
-                        <span class="review__info--top-right"><i class="ri-star-fill"></i>4.1</span>
-                        <div class="review__info--bottom-left">
-                            <span>RPG / ACCION</span>
-                            <h3>CIBERPUNK 2077</h3>
-                            <span>CD Projekt Red</span>
-                            <button class="review__btn"><i class="ri-play-fill"></i> Abrir reseña</button>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
         <!-- News section
          Descrición: Esta sección reúne las últimas noticias del mundo de los videojuegos. Aquí los usuarios pueden mantenerse informados sobre lanzamientos de nuevos títulos, adquisiciones o ventas de estudios, novedades relacionadas con consolas, actualizaciones importantes, alianzas entre marcas, avances en funcionalidades como el crossplay y otras noticias relevantes del sector.  -->
-        <section class="block--l news__section">
-            <h2>Lo más nuevo</h2>
-            <span>Noticias frescas del mundo gaming</span>
+        <section class="block news__section">
+            <h1>Lo más nuevo</h1>
+            <span>Lo que pasa en la industria, antes que en cualquier otro lado.</span>
+            <section class="news__recent">
+                    <picture class="recent__background">
+                        <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
+                        <img class="news__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
+                    </picture>
+                    <div class="recent__info">
+                        <span class="recent__type">LANZAMIENTOS</span>
+                        <h2 class="recent__heading">GTA VI confirma fecha definitiva: noviembre 2026</h2>
+                        <p class="recent__context">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aspernatur.</p>
+                        <span class="recent__date">06 JUN 2026 · 4 min</span>
+                    </div>
+                </section>
             <div class="news__grid">
+                <article class="news__card">
+                    <span class="news__type">LANZAMIENTOS</span>
+                    <picture>
+                        <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
+                        <img class="news__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
+                    </picture>
+                    <div class="news__info">
+                        <span>06 JUN 2026 · 4 min</span>
+                        <h4>Ciberpunk 2077 ha recibido su actualización definitiva</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aspernatur.</p>
+                    </div>
+                </article>
+                <article class="news__card">
+                    <span class="news__type">LANZAMIENTOS</span>
+                    <picture>
+                        <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
+                        <img class="news__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
+                    </picture>
+                    <div class="news__info">
+                        <span>06 JUN 2026 · 4 min</span>
+                        <h4>Ciberpunk 2077 ha recibido su actualización definitiva</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, aspernatur.</p>
+                    </div>
+                </article>
                 <article class="news__card">
                     <span class="news__type">LANZAMIENTOS</span>
                     <picture>
@@ -216,7 +139,7 @@
     </main>
     <!-- Footer
      Descrición: En el pie de página (footer) se muestran los derechos de autor (copyright) de Respawn - Gaming Hub. Además, incluye una serie de enlaces de interés para los usuarios, como la política de privacidad, los términos y condiciones de uso y la política de cookies. -->
-    <footer class="footer block--l">
+    <footer class="footer__block block">
         <!-- Contenido del footer -->
         <div class="footer__copyright">
             <span><i class="ri-copyright-line"></i> 2026 RESPAWN BLOG · GAMING HUB</span>
