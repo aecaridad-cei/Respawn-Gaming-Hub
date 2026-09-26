@@ -689,6 +689,40 @@ li {
     }
 }
 
+/* About Us Page CSS */
+/* Descripción: */
+
+.about__section {
+    display: flex;
+    flex-direction: column;
+
+    & .about__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+
+        padding: 1rem;
+        gap: 2rem;
+
+        & .about__card {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            gap: 1rem;
+            border-radius: 1rem;
+            background-color: var(--color-acent);
+        }
+
+        & .about__contact {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            gap: 1rem;
+            border-radius: 1rem;
+            background-color: var(--color-acent);
+        }
+    }
+}
+
 /* Resena Page CSS */
 /* Descripción: */
 
