@@ -629,12 +629,30 @@ li {
 
 /* Reviews Page CSS */
 
+.reviews__content {
+
+    & .reviews__aside {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-right: 1.5rem;
+        float: left;
+
+        & .aside__card {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 1rem;
+            background-color: var(--color-grey);
+        }
+    }
+}
 /* Descripción: */
 
-/* Review Page CSS */
+/* Resena Page CSS */
 /* Descripción: */
 
-.review__hero {
+.resena__hero {
 
     display: flex;
     flex-direction: column;
@@ -665,7 +683,7 @@ li {
     }
 }
 
-.review__tags {
+.resena__tags {
     display: flex;
     flex-wrap: wrap;
     margin: var(--margin-responsive) var(--margin-responsive) 0;
@@ -685,11 +703,11 @@ li {
     }
 }
 
-.review__content {
+.resena__content {
     display: flex;
     margin: var(--margin-responsive) var(--margin-responsive);
 
-    & .review__text {
+    & .resena__text {
         display: flex;
         flex-direction: column;
         flex: 1 1 1;
@@ -700,13 +718,13 @@ li {
             padding-bottom: var(--space-4);
         }
 
-        & .review__score{
+        & .resena__score{
         display: flex;
         flex-direction: column;
         }
     }
 
-    & .review__aside {
+    & .resena__aside {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -714,7 +732,7 @@ li {
         flex: 1;
         float: right;
 
-        & .aside__card{
+        & .aside__resenacard{
             display: flex;
             flex-direction: column;
             align-items: start;
