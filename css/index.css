@@ -628,6 +628,7 @@ li {
 }
 
 /* Reviews Page CSS */
+/* Descripción: */
 
 .reviews__content {
 
@@ -647,7 +648,46 @@ li {
         }
     }
 }
+
+/* News Page CSS */
 /* Descripción: */
+
+.news__recent {
+    position: relative;
+
+    & .recent__info {
+        display: flex;
+        flex-direction: column;
+
+        & .recent__type {
+            padding: 0.5rem;
+        }
+
+        & .recent__heading {
+            padding: 4rem 1rem 1rem 1rem;
+        }
+
+        & .recent__context {
+            padding: 1rem;
+        }
+
+        & .recent__date {
+            padding: 1rem;
+        }
+
+    }
+
+    & .recent__background {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: fill;
+    }
+}
 
 /* Resena Page CSS */
 /* Descripción: */
