@@ -69,6 +69,36 @@ button {
     --color-lightnovedad: #b52b854c;
     --color-error: #e26868;
 
+    --ciberpunk--bg: #0d0f00;
+    --ciberpunk--primary: #f7ff3c;
+    --ciberpunk--secondary: #00f0ff;
+    --ciberpunk--text: #f7ff3c;
+    --ciberpunk--muted: #a8b000;
+
+    --gta--bg: #1a0420;
+    --gta--primary: #ff3ea5;
+    --gta--secondary: #00d4ff;
+    --gta--text: #ffffff;
+    --gta--muted: #ffb3d9;
+
+    --god--bg: #050e1a;
+    --god--primary: #3aa8d8;
+    --god--secondary: #e8c878;
+    --god--text: #e6f0fa;
+    --god--muted: #6b8aa0;
+
+    --resident--bg: #0a0303;
+    --resident--primary: #a31818;
+    --resident--secondary: #d4b48a;
+    --resident--text: #e8d4c0;
+    --resident--muted: #7a5050;
+
+    --forza--bg: #1a0010;
+    --forza--primary: #ff2d55;
+    --forza--secondary: #ffd60a;
+    --forza--text: #ffffff;
+    --forza--muted: #ff99b3;
+
     /* FONTS */
 
     --text-xl: normal normal 800 normal clamp(3em, 5vw, 4em) normal, "inter", sans-serif;
@@ -884,18 +914,19 @@ li {
         background-color: var(--color-black);
         padding: 3rem 1rem;
         border-radius: 1rem;
+        color: white;
 
         & .final__score {
 
             & .score {
-                background-color: #7d7020;
+                background-color: yellow;
                 padding: 1rem;
                 border-radius: 1.2rem;
                 }
 
-            & .label{
-                font: var(--label);
-                }    
+            & .label {
+                color: white;
+            }
             }
         }
     }
