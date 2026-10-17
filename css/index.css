@@ -157,6 +157,10 @@ li {
     font: var(--label)
 }
 
+.strong {
+    font: var(--body-strong);
+}
+
 .block {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -602,6 +606,9 @@ li {
                 padding: var(--space-2);
                 background-color: var(--color-white);
                 border-radius: var(--space-12);
+                font: var(--body-strong);
+                font-size: small;
+                font-weight: 600;
             }
 
             & .news__image {
@@ -851,10 +858,6 @@ li {
 
         & .label {
             font: var(--label);
-        }
-
-        & .strong {
-            font: var(--body-strong);
         }
     }
 }
