@@ -153,6 +153,10 @@ li {
     list-style: none;
 }
 
+.label {
+    font: var(--label)
+}
+
 .block {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -271,22 +275,27 @@ li {
         flex-direction: column;
         padding: 1rem 2rem 1rem;
         gap: 1rem;
+        max-height: 20rem;
     
         & .pepito {
             display: flex;
             justify-content: space-between;
-            align-items: start;
+            align-items: center;
 
             & .arrows {
                 display: flex;
                 gap: 2rem;
+            }
+
+            & .label {
+                font: var(--label);
             }
         }
 
         & .jaime{
             display: flex;
             flex-direction: column;
-            padding-top: 8rem;
+            padding-top: 4rem;
             gap: 1rem;
         }
 
