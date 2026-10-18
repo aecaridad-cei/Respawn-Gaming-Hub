@@ -69,35 +69,35 @@ button {
     --color-lightnovedad: #b52b854c;
     --color-error: #e26868;
 
-    --ciberpunk--bg: #0d0f00;
-    --ciberpunk--primary: #f7ff3c;
-    --ciberpunk--secondary: #00f0ff;
-    --ciberpunk--text: #f7ff3c;
-    --ciberpunk--muted: #a8b000;
+    --ciberpunk-bg: #0d0f00;
+    --ciberpunk-primary: #f7ff3c;
+    --ciberpunk-secondary: #00f0ff;
+    --ciberpunk-text: #f7ff3c;
+    --ciberpunk-muted: #a8b000;
 
-    --gta--bg: #1a0420;
-    --gta--primary: #ff3ea5;
-    --gta--secondary: #00d4ff;
-    --gta--text: #ffffff;
-    --gta--muted: #ffb3d9;
+    --gta-bg: #1a0420;
+    --gta-primary: #ff3ea5;
+    --gta-secondary: #00d4ff;
+    --gta-text: #ffffff;
+    --gta-muted: #ffb3d9;
 
-    --god--bg: #050e1a;
-    --god--primary: #3aa8d8;
-    --god--secondary: #e8c878;
-    --god--text: #e6f0fa;
-    --god--muted: #6b8aa0;
+    --god-bg: #050e1a;
+    --god-primary: #3aa8d8;
+    --god-secondary: #e8c878;
+    --god-text: #e6f0fa;
+    --god-muted: #6b8aa0;
 
-    --resident--bg: #0a0303;
-    --resident--primary: #a31818;
-    --resident--secondary: #d4b48a;
-    --resident--text: #e8d4c0;
-    --resident--muted: #7a5050;
+    --resident-bg: #0a0303;
+    --resident-primary: #a31818;
+    --resident-secondary: #d4b48a;
+    --resident-text: #e8d4c0;
+    --resident-muted: #7a5050;
 
-    --forza--bg: #1a0010;
-    --forza--primary: #ff2d55;
-    --forza--secondary: #ffd60a;
-    --forza--text: #ffffff;
-    --forza--muted: #ff99b3;
+    --forza-bg: #1a0010;
+    --forza-primary: #ff2d55;
+    --forza-secondary: #ffd60a;
+    --forza-text: #ffffff;
+    --forza-muted: #ff99b3;
 
     /* FONTS */
 
@@ -109,6 +109,51 @@ button {
     --body-strong: normal normal 800 normal clamp(1.1875em, 5vw, 1.1875em) normal, "inter", sans-serif;
     --label:normal normal 400 normal clamp(.9375em, 5vw, .9375em) normal, "jetBrains Mono", sans-serif;
     --links: normal normal 600 normal clamp(.9375em, 5vw, .9375em) normal, "jetBrains Mono", sans-serif;
+    
+    --ciberpunk-text-xl: normal normal 800 normal clamp(3em, 5vw, 4em) normal, "Rajdhani", sans-serif;
+    --ciberpunk-text-l: normal normal 800 normal clamp(1.5em, 5vw, 2em) normal, "Rajdhani", sans-serif;
+    --ciberpunk-text-md: normal normal 400 normal clamp(1.1875em, 5vw, 1.5em) normal, "Shared Tech Mono", sans-serif;
+    --ciberpunk-text-s: normal normal 400 normal clamp(1.0625em, 5vw, 1.1875em) normal, "Shared Tech Mono", sans-serif;
+    --ciberpunk-body: normal normal 400 normal clamp(.9375em, 5vw, .9375em) normal, "Rajdhani", sans-serif;
+    --ciberpunk-body-strong: normal normal 800 normal clamp(1.1875em, 5vw, 1.1875em) normal, "Rajdhani", sans-serif;
+    --ciberpunk-label:normal normal 400 normal clamp(.9375em, 5vw, .9375em) normal, "Shared Tech Mono", sans-serif;
+    --ciberpunk-links: normal normal 600 normal clamp(.9375em, 5vw, .9375em) normal, "Shared Tech Mono", sans-serif;
+
+    --gta-text-xl: normal normal 800 normal clamp(3em, 5vw, 4em) normal, "Oswald", sans-serif;
+    --gta-text-l: normal normal 800 normal clamp(1.5em, 5vw, 2em) normal, "Oswald", sans-serif;
+    --gta-text-md: normal normal 400 normal clamp(1.1875em, 5vw, 1.5em) normal, "Space Grotesk", sans-serif;
+    --gta-text-s: normal normal 400 normal clamp(1.0625em, 5vw, 1.1875em) normal, "Space Grotesk", sans-serif;
+    --gta-body: normal normal 400 normal clamp(.9375em, 5vw, .9375em) normal, "Oswald", sans-serif;
+    --gta-body-strong: normal normal 800 normal clamp(1.1875em, 5vw, 1.1875em) normal, "Oswald", sans-serif;
+    --gta-label:normal normal 400 normal clamp(.9375em, 5vw, .9375em) normal, "Space Grotesk", sans-serif;
+    --gta-links: normal normal 600 normal clamp(.9375em, 5vw, .9375em) normal, "Space Grotesk", sans-serif;
+
+    --god-text-xl: normal normal 800 normal clamp(3em, 5vw, 4em) normal, "Cinzel", sans-serif;
+    --god-text-l: normal normal 800 normal clamp(1.5em, 5vw, 2em) normal, "Cinzel", sans-serif;
+    --god-text-md: normal normal 400 normal clamp(1.1875em, 5vw, 1.5em) normal, "JetBrains Mono", sans-serif;
+    --god-text-s: normal normal 400 normal clamp(1.0625em, 5vw, 1.1875em) normal, "JetBrains Mono", sans-serif;
+    --god-body: normal normal 400 normal clamp(.9375em, 5vw, .9375em) normal, "Cinzel", sans-serif;
+    --god-body-strong: normal normal 800 normal clamp(1.1875em, 5vw, 1.1875em) normal, "Cinzel", sans-serif;
+    --god-label:normal normal 400 normal clamp(.9375em, 5vw, .9375em) normal, "JetBrains Mono", sans-serif;
+    --god-links: normal normal 600 normal clamp(.9375em, 5vw, .9375em) normal, "JetBrains Mono", sans-serif;
+
+    --resident-text-xl: normal normal 800 normal clamp(3em, 5vw, 4em) normal, "IM Fell English", sans-serif;
+    --resident-text-l: normal normal 800 normal clamp(1.5em, 5vw, 2em) normal, "IM Fell English", sans-serif;
+    --resident-text-md: normal normal 400 normal clamp(1.1875em, 5vw, 1.5em) normal, "Shared Tech Mono", sans-serif;
+    --resident-text-s: normal normal 400 normal clamp(1.0625em, 5vw, 1.1875em) normal, "Shared Tech Mono", sans-serif;
+    --resident-body: normal normal 400 normal clamp(.9375em, 5vw, .9375em) normal, "IM Fell English", sans-serif;
+    --resident-body-strong: normal normal 800 normal clamp(1.1875em, 5vw, 1.1875em) normal, "IM Fell English", sans-serif;
+    --resident-label:normal normal 400 normal clamp(.9375em, 5vw, .9375em) normal, "Shared Tech Mono", sans-serif;
+    --resident-links: normal normal 600 normal clamp(.9375em, 5vw, .9375em) normal, "Shared Tech Mono", sans-serif;
+
+    --forza-text-xl: normal normal 800 normal clamp(3em, 5vw, 4em) normal, "Orbitron", sans-serif;
+    --forza-text-l: normal normal 800 normal clamp(1.5em, 5vw, 2em) normal, "Orbitron", sans-serif;
+    --forza-text-md: normal normal 400 normal clamp(1.1875em, 5vw, 1.5em) normal, "Space Grotesk", sans-serif;
+    --forza-text-s: normal normal 400 normal clamp(1.0625em, 5vw, 1.1875em) normal, "Space Grotesk", sans-serif;
+    --forza-body: normal normal 400 normal clamp(.9375em, 5vw, .9375em) normal, "Orbitron", sans-serif;
+    --forza-body-strong: normal normal 800 normal clamp(1.1875em, 5vw, 1.1875em) normal, "Orbitron", sans-serif;
+    --forza-label:normal normal 400 normal clamp(.9375em, 5vw, .9375em) normal, "Space Grotesk", sans-serif;
+    --forza-links: normal normal 600 normal clamp(.9375em, 5vw, .9375em) normal, "Space Grotesk", sans-serif;
 
 
     /* SPACES */
