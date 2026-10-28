@@ -352,7 +352,9 @@ li {
     & .hero__block {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         padding: 1rem 2rem 1rem;
+        min-height: 600px;
         gap: 1rem;
     
         & .pepito {
