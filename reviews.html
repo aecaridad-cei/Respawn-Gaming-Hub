@@ -1,124 +1,141 @@
+<!-- Descripción: Este archivo HTM contiene la página principal del sitio web.
+Estructura general:
+ - Encabezado
+ - Barra de navegación
+ - Reviews section
+ - Pie de página -->
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Respawn - Gaming Hub</title>
+    <title>Reviews - Respawn Gaming Hub</title>
+    <meta name="description" content="Explora las reseñas de videojuegos de Respawn Gaming Hub, con análisis y puntuaciones de los títulos más destacados.">
     <link rel="stylesheet" href="css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=IM+Fell+English:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <script defer src="js/index.js"></script>
 </head>
 <body>
-   <!-- Header
-     Descrición: En el encabezado (header) de la página se encuentran los principales elementos de navegación. Entre ellos destacan los enlaces que permiten acceder a las secciones de Inicio, Reseñas, Noticias, Listas y Sobre Nosotros. Además, se muestra el logotipo de la marca junto con su nombre. Por último, incorpora una barra adicional que incluye un buscador, un icono de notificaciones para consultar las últimas novedades y una sección de inicio de sesión para los usuarios.
- -->
-    <header class="header block">
-        <!-- Contenido del header -->
-        <div class="header__logo">
-            <div>
-                <span class="monograma">R</span>
-            </div>
-            <div class="header__info">
-                <span class="header__title">RESPAWN</span>
-                <span class="header__subtitle">GAMING HUB</span>
-            </div>
+<!-- Header Descrición: En el encabezado (header) de la página se encuentran los principales elementos de navegación. Entre ellos destacan los enlaces que permiten acceder a las secciones de Inicio, Reseñas, Noticias y Sobre Nosotros. Además, se muestra el logotipo de la marca junto con su nombre.-->
+<header class="header block">
+    <div class="header__logo">
+        <div>
+            <span class="monograma">R</span>
         </div>
-        <div id="nav" class="header__nav no-mobile">
-            <nav>
-                <ul class="header__ul">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="reviews.html">Reseñas</a></li>
-                    <li><a href="news.html">Noticias</a></li>
-                    <li><a href="list.html">Listas</a></li>
-                    <li><a href="about.html">Sobre</a></li>
-                </ul>
-            </nav>
+        <div class="header__info">
+            <span class="header__title">RESPAWN</span>
+            <span class="header__subtitle">GAMING HUB</span>
         </div>
-        <div id="header__buttons" class="header__buttons no-mobile">
-            <button><i class="ri-search-2-line"></i></button>
-            <button><i class="ri-notification-2-line"></i></button>
-            <div class="header__buttons-player">
-                <button><i class="ri-user-line"></i> <span>Player 1</span></button>
-            </div>
-        </div>
-    </header>
-    <main>
+    </div>
+    <div>
+        <nav id="nav" class="header__nav no-mobile" aria-label="Navegación principal">
+            <button id="menu-close" type="button" title="Cerrar menú de navegación móvil" aria-label="Cerrar menú de navegación móvil">
+                <i class="ri-close-line no-desktop" aria-hidden="true"></i>
+            </button>
+            <ul class="header__ul">
+                <li><a href="index.html" title="Ir a la página de inicio de Respawn Gaming Hub">Inicio</a></li>
+                <li><a href="reviews.html" title="Ver todas las reseñas de videojuegos">Reseñas</a></li>
+                <li><a href="news.html" title="Ver las últimas noticias de videojuegos">Noticias</a></li>
+                <li><a href="about.html" title="Conocer al equipo de Respawn Gaming Hub">Sobre</a></li>
+            </ul>
+        </nav>
+        <button id="menu-toggle" type="button" title="Abrir menú de navegación móvil" aria-label="Abrir menú de navegación móvil">
+            <i class="ri-menu-line no-desktop" aria-hidden="true"></i>
+        </button>
+    </div>
+</header>
+    <main aria-label="Catálogo de reseñas de videojuegos">
         <!-- Reviews section
          Descrición: En esta sección se muestran una serie de imágenes que permiten acceder directamente, mediante enlaces, a las reseñas más recientes y a las favoritas del staff. -->
-        <section class="block reviews__section">
+        <section class="block reviews__section" aria-label="Todas las reseñas de videojuegos">
             <!-- Contenido reviews section -->
             <h1>Reseñas</h1>
-            <p>Filtrá, buscá y entrá en cada reseña. Una vez adentro, activá el modo inmersivo para ver la página con la estética del juego.</p>
-            <div class="reviews__content">
-                <div class="reviews__grid">
-                    <article class="review__card">
-                        <picture>
-                            <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
-                            <img class="review__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
-                        </picture>
-                        <div class="review__info">
-                            <span class="review__info--top-left">2020</span>
-                            <span class="review__info--top-right"><i class="ri-star-fill"></i>4.1</span>
-                            <div class="review__info--bottom-left">
-                                <span>RPG / ACCION</span>
-                                <h3>CIBERPUNK 2077</h3>
-                                <span>CD Projekt Red</span>
-                                <span class="review__btn"><i class="ri-play-fill"></i> Abrir reseña</span>
-                            </div>
+            <p>Explora nuestra colección completa de análisis. Una guía directa con los mejores títulos de la industria valorados por el equipo de Respawn.</p>
+            <div class="reviews__grid">
+                <article class="review__card">
+                    <picture>
+                        <source srcset="media/webp/ciberpunk__review.webp" type="image/webp">
+                        <img class="review__image" src="media/jpg/ciberpunk__review.jpg" alt="Arte promocional de Cyberpunk 2077 con una figura en la ciudad futurista de Night City" loading="lazy">
+                    </picture>
+                    <div class="review__info">
+                        <span class="review__info--top-left">2020</span>
+                        <span class="review__info--top-right"><i class="ri-star-fill" aria-hidden="true"></i>4.1</span>
+                        <div class="review__info--bottom-left">
+                            <span>RPG / ACCION</span>
+                            <h2 class="h2">CIBERPUNK 2077</h2>
+                            <span>CD Projekt Red</span>
+                            <a class="review__btn review__btn--ciberpunk" href="resena--ciberpunk.html" title="Abrir la reseña completa de Cyberpunk 2077"><i class="ri-play-fill" aria-hidden="true"></i> Abrir reseña</a>
                         </div>
-                    </article>
-                    <article class="review__card">
-                        <picture>
-                            <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
-                            <img class="review__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
-                        </picture>
-                        <div class="review__info">
-                            <span class="review__info--top-left">2020</span>
-                            <span class="review__info--top-right"><i class="ri-star-fill"></i>4.1</span>
-                            <div class="review__info--bottom-left">
-                                <span>RPG / ACCION</span>
-                                <h3>CIBERPUNK 2077</h3>
-                                <span>CD Projekt Red</span>
-                                <button class="review__btn"><i class="ri-play-fill"></i> Abrir reseña</button>
-                            </div>
+                    </div>
+                </article>
+                <article class="review__card">
+                    <picture>
+                        <source srcset="media/webp/gta__review.webp" type="image/webp">
+                        <img class="review__image" src="media/jpg/gta__review.jpg" alt="Arte promocional de Grand Theft Auto VI ambientado en Vice City" loading="lazy">
+                    </picture>
+                    <div class="review__info">
+                        <span class="review__info--top-left">2026</span>
+                        <span class="review__info--top-right"><i class="ri-star-fill" aria-hidden="true"></i>4.1</span>
+                        <div class="review__info--bottom-left">
+                            <span>ACCIÓN / MUNDO ABIERTO</span>
+                            <h2 class="h2">GTA VI</h2>
+                            <span>Rockstar Games</span>
+                            <a class="review__btn review__btn--gta" href="resena--gta.html" title="Abrir la reseña completa de GTA VI"><i class="ri-play-fill" aria-hidden="true"></i> Abrir reseña</a>
                         </div>
-                    </article>
-                    <article class="review__card">
-                        <picture>
-                            <!-- Preguntas para Pedro: ¿Porque el height no funciona en el picture ni en el source pero si en el img? A: Agregue el height 100% al reset -->
-                            <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
-                            <img class="review__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
-                        </picture>
-                        <div class="review__info">
-                            <span class="review__info--top-left">2020</span>
-                            <span class="review__info--top-right"><i class="ri-star-fill"></i>4.1</span>
-                            <div class="review__info--bottom-left">
-                                <span>RPG / ACCION</span>
-                                <h3>CIBERPUNK 2077</h3>
-                                <span>CD Projekt Red</span>
-                                <button class="review__btn"><i class="ri-play-fill"></i> Abrir reseña</button>
-                            </div>
+                    </div>
+                </article>
+                <article class="review__card">
+                    <picture>
+                        <source srcset="media/webp/god__review.webp" type="image/webp">
+                        <img class="review__image" src="media/jpg/god__review.jpg" alt="Arte promocional de God of War: Ragnarök con su ambientación de mitología nórdica" loading="lazy">
+                    </picture>
+                    <div class="review__info">
+                        <span class="review__info--top-left">2022</span>
+                        <span class="review__info--top-right"><i class="ri-star-fill" aria-hidden="true"></i>4.1</span>
+                        <div class="review__info--bottom-left">
+                            <span>ACCIÓN / AVENTURA</span>
+                            <h2 class="h2">GOD OF WAR: RAGNARÖK</h2>
+                            <span>Santa Monica Studio</span>
+                            <a class="review__btn review__btn--god" href="resena--god.html" title="Abrir la reseña completa de God of War: Ragnarök"><i class="ri-play-fill" aria-hidden="true"></i> Abrir reseña</a>
                         </div>
-                    </article>
-                    <article class="review__card">
-                        <picture>
-                            <!-- Preguntas para Pedro: ¿Porque el height no funciona en el picture ni en el source pero si en el img? A: Agregue el height 100% al reset -->
-                            <source srcset="media/img/Ciberpunk__hero.webp" type="image/webp">
-                            <img class="review__image" src="media/img/Ciberpunk__hero.jpg" alt="hero__background">
-                        </picture>
-                        <div class="review__info">
-                            <span class="review__info--top-left">2020</span>
-                            <span class="review__info--top-right"><i class="ri-star-fill"></i>4.1</span>
-                            <div class="review__info--bottom-left">
-                                <span>RPG / ACCION</span>
-                                <h3>CIBERPUNK 2077</h3>
-                                <span>CD Projekt Red</span>
-                                <button class="review__btn"><i class="ri-play-fill"></i> Abrir reseña</button>
-                            </div>
+                    </div>
+                </article>
+                <article class="review__card">
+                    <picture>
+                        <source srcset="media/webp/forza__review.webp" type="image/webp">
+                        <img class="review__image" src="media/jpg/forza__review.jpg" alt="Arte promocional de Forza Horizon 6 con un automóvil en una carretera de mundo abierto" loading="lazy">
+                    </picture>
+                    <div class="review__info">
+                        <span class="review__info--top-left">2026</span>
+                        <span class="review__info--top-right"><i class="ri-star-fill" aria-hidden="true"></i>4.1</span>
+                        <div class="review__info--bottom-left">
+                            <span>CARRERA / MUNDO ABIERTO</span>
+                            <h2 class="h2">FORZA HORIZON 6</h2>
+                            <span>Playground Games</span>
+                            <a class="review__btn review__btn--forza" href="resena--forza.html" title="Abrir la reseña completa de Forza Horizon 6"><i class="ri-play-fill" aria-hidden="true"></i> Abrir reseña</a>
                         </div>
-                    </article>
-                </div>
+                    </div>
+                </article>
+                <article class="review__card">
+                    <picture>
+                        <source srcset="media/webp/resident__review.webp" type="image/webp">
+                        <img class="review__image" src="media/jpg/resident__review.jpg" alt="Arte promocional de Resident Evil Requiem con una atmósfera de terror y supervivencia" loading="lazy">
+                    </picture>
+                    <div class="review__info">
+                        <span class="review__info--top-left">2026</span>
+                        <span class="review__info--top-right"><i class="ri-star-fill" aria-hidden="true"></i>4.1</span>
+                        <div class="review__info--bottom-left">
+                            <span>SURVIVAL / HORROR</span>
+                            <h2 class="h2">RESIDENT EVIL REQUIEM</h2>
+                            <span>Capcom</span>
+                            <a class="review__btn review__btn--resident" href="resena--resident.html" title="Abrir la reseña completa de Resident Evil Requiem"><i class="ri-play-fill" aria-hidden="true"></i> Abrir reseña</a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
     </main>
@@ -127,12 +144,12 @@
     <footer class="footer__block block">
         <!-- Contenido del footer -->
         <div class="footer__copyright">
-            <span><i class="ri-copyright-line"></i> 2026 RESPAWN BLOG · GAMING HUB</span>
+            <span><i class="ri-copyright-line" aria-hidden="true"></i> 2026 RESPAWN BLOG · GAMING HUB</span>
         </div>
         <div class="footer__links">
-            <a href="#">PRIVACIDAD</a>
-            <a href="#">TÉRMINOS</a>
-            <a href="#">COOKIES</a>
+            <a href="#" title="Consultar la política de privacidad (enlace pendiente de configurar)">PRIVACIDAD</a>
+            <a href="#" title="Consultar los términos y condiciones (enlace pendiente de configurar)">TÉRMINOS</a>
+            <a href="#" title="Consultar la política de cookies (enlace pendiente de configurar)">COOKIES</a>
         </div>
     </footer>
 </body>
